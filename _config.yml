@@ -11,7 +11,7 @@ title:            Sarp Kavalcioglu
 tagline:          ''
 description:      'Personal website for Sarp Kavalcioglu'
 url:              http://hyde.getpoole.com
-baseurl:          
+baseurl:          /
 
 author:
   name:           'Sarp Kavalcioglu'

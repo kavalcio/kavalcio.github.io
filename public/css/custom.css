@@ -1,0 +1,31 @@
+.work-container {
+    margin: 30px 0 30px 0;
+}
+
+.work-title {
+    display: flex;
+}
+
+.work-icon {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.work-title-left {
+    display: inline;
+    margin: auto 0 auto 0;
+    font-weight: bold;
+}
+
+.work-title-right {
+    display: inline;
+    margin: auto 0 auto auto;
+    font-weight: bold;
+}
+
+.work-line {
+    margin-inline-start: 45px;
+}

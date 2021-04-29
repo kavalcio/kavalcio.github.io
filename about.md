@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 ---
-
+Add photo of me here
 I am a bla bla bla.
 <hr>
 

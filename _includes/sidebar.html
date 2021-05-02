@@ -10,12 +10,19 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}">About Me</a>
+      <!-- <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}">About Me</a>
       <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}projects/">Projects</a>
       <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}interests/">Interests</a>
       <br>
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}contact/">Contact</a>
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}contact/">Contact</a> -->
 
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ '' | relative_url }}">About Me</a>
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ '/projects' | relative_url }}">Projects</a>
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ '/interests' | relative_url }}">Interests</a>
+      <br>
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ '/contact' | relative_url }}">Contact</a>
+
+      <!-- href="{{ '/public/css/custom.css' | relative_url }}" -->
       <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
     </nav>
   </div>

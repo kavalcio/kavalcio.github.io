@@ -6,6 +6,8 @@ Add photo of me here
 I am a bla bla bla.
 <hr>
 
+<!-- TODO: fix bug where clicking sidebar link multiple times breaks page -->
+
 ## Education:
 
 <div class="work-container">

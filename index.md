@@ -2,7 +2,6 @@
 layout: page
 title: About Me
 ---
-Add photo of me here
 I am a bla bla bla.
 <hr>
 
@@ -27,7 +26,7 @@ I am a bla bla bla.
   </div>
   <div class="work-line">• Designed and built a web-based tool used for populating a dataset of annotated tissue slides</div>
   <div class="work-line">• Collaborated with academics to refine the annotation workflow</div>
-  <div class="work-line">• Implemented numerous features on the entire web development stack using Javascript and PHP</div>
+  <div class="work-line">• Implemented numerous features on the entire web stack using Javascript and PHP</div>
   <div class="work-line">• Prepared frequent reports and presentations for faculty members</div>
   <div class="work-line">• Constructed and performed iterative migrations on a database with MySQL</div>
 </div>

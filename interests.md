@@ -4,8 +4,12 @@ title: Interests
 ---
 
 Here are some of my interests
+Interested in things related to film
+-Editing: Adobe Premiere Pro
+-
+Photography
+Woodworking
 
-Films
 
 <!-- <iframe width="420" height="315"
 src="https://www.youtube.com/watch?v=0IENwmScTAA">

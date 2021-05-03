@@ -110,3 +110,30 @@
     height: 30px;
     margin: auto 0 auto 0;
 }
+
+.headshot {
+    width: 170px;
+    border-radius: 100px;
+    margin: 0 auto 0 auto;
+    border: 4px solid white;
+}
+
+.contact-icon {
+    width: 80%;
+    height: fit-content;
+    margin: 10px auto 10px auto;
+}
+
+.contact-icon-container {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.contact-icon-container:hover {
+    /* height: fit-content;
+    width: fit-content; */
+    /* height: 100%; */
+    background-color: #90aae444;
+}

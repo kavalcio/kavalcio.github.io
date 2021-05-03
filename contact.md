@@ -7,7 +7,15 @@ Here is my contact info
 
 Add direct links here
 @: sarpkavalcioglu@gmail.com
-LinkedIn:
+LinkedIn: https://www.linkedin.com/in/sarp-kavalcioglu/
+ 
+<div class="contact-icon-container" onclick="window.location='https://www.linkedin.com/in/sarp-kavalcioglu/'">
+    <img class="contact-icon" src="../images/linkedin.png">
+    <div>
+        LinkedIn
+    </div>
+</div>
 
-
-<a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub page</a>
+<div class="contact-icon-container" onclick="window.location='https://github.com/kavalcio/'">
+    <img class="contact-icon" src="../images/github.png">
+</div>

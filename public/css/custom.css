@@ -111,6 +111,14 @@
     margin: auto 0 auto 0;
 }
 
+.proj-subheader {
+    padding-left: 20px;
+    font-style: italic;
+    background-color: #e4e4e485;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .headshot {
     width: 170px;
     border-radius: 100px;
@@ -119,16 +127,18 @@
 }
 
 .contact-icon {
-    width: 80%;
+    width: 40px;
     height: fit-content;
-    margin: 10px auto 10px auto;
+    margin: auto 0 auto 0;
 }
 
 .contact-icon-container {
-    display: inline-flex;
-    width: 100px;
-    height: 100px;
+    display: flex;
+    vertical-align: middle;
+    width: fit-content;
+    height: 60px;
     cursor: pointer;
+    padding: 0 10px 0 10px;
 }
 
 .contact-icon-container:hover {
@@ -136,4 +146,8 @@
     width: fit-content; */
     /* height: 100%; */
     background-color: #90aae444;
+}
+
+.contact-icon-label {
+    margin: auto 0 auto 10px;
 }

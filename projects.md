@@ -11,13 +11,16 @@ Here you can find some of the projects I have worked on in the past.
         <div id="proj1-arrow" class="collapsible-arrow"></div>
     </div>
     <div class="collapsible-title">Atlas of Digital Pathology - Tissue Annotation Tool</div>
-    </div>
+</div>
 <div id="proj1-content" class="collapsible-content">
+    <div class="proj-subheader">Created a web-based annotation tool for computational pathology research.</div>
     <div class="proj-img-container">
         <img class="proj-img" style="margin-right:5px;" src="../images/workflow.png">
         <img class="proj-img" src="../images/adp_image.png">
     </div>
     For my Capstone project, I was part of a 3-people team that designed and built a web-based annotation tool for populating a tissue histology image database. The purpose of this database is to train machine learning models in various areas of computational pathology (like cancer detection).
+    <!-- <br><br> -->
+
 </div>
 
 <hr>
@@ -28,15 +31,20 @@ Here you can find some of the projects I have worked on in the past.
         <div id="proj6-arrow" class="collapsible-arrow"></div>
     </div>
     <div class="collapsible-title">Combat Robot Design</div>
-    </div>
+</div>
 <div id="proj6-content" class="collapsible-content">
+    <div class="proj-subheader">Lead a university team in designing and building an RC combat robot.</div>
     <div class="proj-img-container">
         <img class="proj-img" style="margin-right:5px;" src="../images/utra_1.jpg">
         <img class="proj-img" src="../images/utra_2.jpg">
     </div>
     Between 2018-2020, I co-led the Combat division of the UofT Robotics Association.
     During this time we designed, manufactured and assembled a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.<br><br>
-    We competed in RoboBrawl 2019 at the University of Illinois Urbana-Champaign and ranked 8th place out of 30+ teams from various universities around North America.<br><br>
+    We competed in RoboBrawl 2019 at the University of Illinois Urbana-Champaign and ranked 8th place out of 30+ teams from various universities around North America.<br>
+    <br>
+    <!-- <div class="proj-img-container">
+        <img class="proj-img" style="margin-right:5px;" src="../images/utra_3.jpg">
+    </div> -->
     My responsibilities included:<br>
     • Overseeing electrical/mechatronic design<br>
     • Managing budget, logistics and integration<br>
@@ -53,10 +61,9 @@ Here you can find some of the projects I have worked on in the past.
         <div id="proj2-arrow" class="collapsible-arrow"></div>
     </div>
     <div class="collapsible-title">MindUnite - Brainstorming Tool</div>
-    </div>
+</div>
 <div id="proj2-content" class="collapsible-content">
-    * Lorem ipsum
-    * Dolor sit amet
+    -- Under Construction --
 </div>
 
 <hr>
@@ -67,7 +74,7 @@ Here you can find some of the projects I have worked on in the past.
         <div id="proj3-arrow" class="collapsible-arrow"></div>
     </div>
     <div class="collapsible-title">Computer Graphics Labs</div>
-    </div>
+</div>
 <div id="proj3-content" class="collapsible-content">
     * Lorem ipsum
     * Dolor sit amet
@@ -80,8 +87,21 @@ Here you can find some of the projects I have worked on in the past.
         <div id="proj4-arrow" class="collapsible-arrow"></div>
     </div>
     <div class="collapsible-title">Machine Learning Labs</div>
-    </div>
+</div>
 <div id="proj4-content" class="collapsible-content">
+    * Lorem ipsum
+    * Dolor sit amet
+</div>
+<hr> -->
+
+<!------------------------ Pneumatic Engine ------------------------>
+<!-- <div id="proj7" class="collapsible">
+    <div class="collapsible-arrow-container">
+        <div id="proj7-arrow" class="collapsible-arrow"></div>
+    </div>
+    <div class="collapsible-title">Machine Learning Labs</div>
+</div>
+<div id="proj7-content" class="collapsible-content">
     * Lorem ipsum
     * Dolor sit amet
 </div>
@@ -93,9 +113,10 @@ Here you can find some of the projects I have worked on in the past.
         <div id="proj5-arrow" class="collapsible-arrow"></div>
     </div>
     <div class="collapsible-title">This Website</div>
-    </div>
+</div>
 <div id="proj5-content" class="collapsible-content">
-    I built this personal website using Jekyll, which is a static site generator written in Ruby.
+    <div class="proj-subheader">Personal website design and development using Jekyll.</div>
+    I built this personal website using Jekyll, a static site generator written in Ruby.
     I based it on Hyde, an existing Jekyll template, and proceded to add some additional functionality using HTML, CSS and Javascript code.<br>
     <div class="proj-icon-container">
         <img class="proj-icon" src="../images/jekyll.png">

@@ -3,14 +3,14 @@ layout: page
 title: Interests
 ---
 
-Here are some of my interests
+<!-- Here are some of my interests
 Interested in things related to film
 -Editing: Adobe Premiere Pro
 -
 Photography
-Woodworking
+Woodworking -->
 
-
+I am a film buff and have made several amateur short films of my own, some of which you can find below.
 <!-- <iframe width="420" height="315"
 src="https://www.youtube.com/watch?v=0IENwmScTAA">
 </iframe> -->

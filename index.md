@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 ---
-I am a bla bla bla.
+<!-- I am a bla bla bla. -->
 <hr>
 
 ## Education:

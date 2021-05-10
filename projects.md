@@ -56,7 +56,7 @@ Here you can find some of the projects I have worked on in the past.
 <hr>
 
 <!------------------------ MindUnite ------------------------>
-<div id="proj2" class="collapsible">
+<!-- <div id="proj2" class="collapsible">
     <div class="collapsible-arrow-container">
         <div id="proj2-arrow" class="collapsible-arrow"></div>
     </div>
@@ -66,7 +66,7 @@ Here you can find some of the projects I have worked on in the past.
     -- Under Construction --
 </div>
 
-<hr>
+<hr> -->
 
 <!------------------------ Computer Graphics (CSC317) ------------------------>
 <!-- <div id="proj3" class="collapsible">
@@ -106,6 +106,46 @@ Here you can find some of the projects I have worked on in the past.
     * Dolor sit amet
 </div>
 <hr> -->
+
+<!------------------------ BMEC 2017 ------------------------>
+<div id="proj8" class="collapsible">
+    <div class="collapsible-arrow-container">
+        <div id="proj8-arrow" class="collapsible-arrow"></div>
+    </div>
+    <div class="collapsible-title">Ergonomic Keyboard Design for Individuals with Cerebral Palsy</div>
+</div>
+<div id="proj8-content" class="collapsible-content">
+    <div class="proj-subheader">Designed, built and presented a keyboard prototype for a Biomedical Engineering competition.</div>
+    <div class="proj-img-container">
+        <img class="proj-img" style="margin-right:5px;" src="../images/beezyboard_4.jpg">
+        <img class="proj-img" src="../images/beezyboard_3.jpg">
+    </div>
+    I participated in the Biomedical Engineering Competition (BMEC 2017) organized by the Club for Undergraduate Biomedical Engineering (CUBE) at the University of Toronto. Our goal was to design a text communication device catered towards individuals living with cerebral palsy. Along with several teammates, I designed and built a functional prototype for a specialized keyboard over the course of two days. We presented our design to a team of judges made up of IBBME professors and experts.
+</div>
+<hr>
+
+<!------------------------ Maze Game ------------------------>
+<div id="proj9" class="collapsible">
+    <div class="collapsible-arrow-container">
+        <div id="proj9-arrow" class="collapsible-arrow"></div>
+    </div>
+    <div class="collapsible-title">FPGA-based Maze Traversal Game</div>
+</div>
+<div id="proj9-content" class="collapsible-content">
+    <div class="proj-subheader">Created a basic video game using computer hardware and low-level software.</div>
+    <div class="proj-img-container">
+        <img class="proj-img" style="margin-right:5px;" src="../images/mazegame_1.jpg">
+        <img class="proj-img" src="../images/mazegame_2.jpg">
+    </div>
+    I created a maze traversal game using Verilog code on a field-programmable gate array (FPGA).
+    The goal of the game is to traverse a maze and get to the finish line without coming into contact with any walls while controlling a constantly-moving player character.<br><br>
+    This design process involved:<br>
+    • Designing a finite state machine (FSM) representing interactions between the different states of the game<br>
+    • Creating I/O modules for user input and image output to the display<br>
+    • Testing code functionality using a simulation via ModelSim<br>
+    • Launching project onto a live FPGA using Quartus Prime
+</div>
+<hr>
 
 <!------------------------ This Website ------------------------>
 <div id="proj5" class="collapsible">

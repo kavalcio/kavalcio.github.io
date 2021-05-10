@@ -72,7 +72,9 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    margin-left: 37px;
+    margin-left: 13px;
+    padding-left: 24px;
+    border-left: #a3a3a352 solid 2px;
 }
 
 .proj-img-container {
@@ -95,6 +97,7 @@
     display:inline;
     border-radius: 0;
     margin: 0;
+    object-fit: contain;
 }
 
 .proj-icon {

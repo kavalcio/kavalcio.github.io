@@ -10,7 +10,7 @@ title: About Me
 <div class="work-container">
   <div class="work-title">
     <img class="work-icon" src="/../images/uoft.png">
-    <div class="work-title-left"> Computer Engineering 𑁋 Bachelor of Applied Science Year</div>
+    <div class="work-title-left"> Computer Engineering 𑁋 Bachelor of Applied Science</div>
     <div class="work-title-right">September 2016 - May 2021</div>
   </div>
   <div class="work-line">University of Toronto, Department of Electrical and Computer Engineering</div>

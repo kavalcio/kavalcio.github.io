@@ -3,7 +3,7 @@ layout: page
 title: Contact
 ---
 
-@: sarpkavalcioglu@gmail.com
+Email me at: <a href="mailto:sarpkavalcioglu@gmail.com">sarpkavalcioglu@gmail.com</a>
  
 <div class="contact-icon-container" onclick="window.location='https://www.linkedin.com/in/sarp-kavalcioglu/'">
     <img class="contact-icon" src="../images/linkedin.png">

@@ -20,6 +20,19 @@ title: About Me
 ## Experience:
 <div class="work-container">
   <div class="work-title">
+    <img class="work-icon" src="/../images/lumiq.jpg">
+    <div class="work-title-left"> FULL STACK DEVELOPER 𑁋 LumiQ</div>
+    <div class="work-title-right">June 2021 - Current</div>
+  </div>
+  <div class="work-line">• Continuous development of a podcast platform in the form of a web app and native app</div>
+  <div class="work-line">• Used React and React Native extensively to implement and maintaing features</div>
+  <div class="work-line">• Expanded the functionality of microservices deployed on Kubernetes</div>
+  <div class="work-line">• Undertook an optimization project that reduced native app render times significantly</div>
+  <div class="work-line">• Participated in major refactoring to support the U.S. expansion of the company</div>
+</div>
+
+<div class="work-container">
+  <div class="work-title">
     <img class="work-icon" src="/../images/adp.png">
     <div class="work-title-left"> FULL STACK DEVELOPER 𑁋 Atlas of Digital Pathology</div>
     <div class="work-title-right">September 2020 - May 2021</div>
@@ -38,7 +51,7 @@ title: About Me
     <div class="work-title-right">June 2019 - August 2020</div>
   </div>
   <div class="work-line">• Contributed to the development of a web-based CMS used by international beauty brands</div>
-  <div class="work-line">• Used a stack including established front and back-end frameworks like Laravel and Vue.js</div>
+  <div class="work-line">• Used a stack including established frameworks like Laravel and Vue.js</div>
   <div class="work-line">• Maintained and expanded a RESTful API based in PHP</div>
   <div class="work-line">• Improved existing code through refactoring and applied modern design patterns</div>
   <div class="work-line">• Participated in team code reviews and mob programming sessions</div>

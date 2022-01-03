@@ -3,4 +3,3 @@
 
 
 <!-- TODO -->
-<!-- Fix bug where url breaks if you press any sidebar link multiple times -->

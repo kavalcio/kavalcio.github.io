@@ -25,7 +25,7 @@ title: About Me
     <div class="work-title-right">June 2021 - Current</div>
   </div>
   <div class="work-line">• Continuous development of a podcast platform in the form of a web app and native app</div>
-  <div class="work-line">• Used React and React Native extensively to implement and maintaing features</div>
+  <div class="work-line">• Used React and React Native extensively to implement and maintain features</div>
   <div class="work-line">• Expanded the functionality of microservices deployed on Kubernetes</div>
   <div class="work-line">• Undertook an optimization project that reduced native app render times significantly</div>
   <div class="work-line">• Participated in major refactoring to support the U.S. expansion of the company</div>

@@ -9,7 +9,7 @@ permalink:        pretty
 # Setup
 title:            Sarp Kavalcioglu
 tagline:          ''
-description:      'Software engineer with a passion for web development and computer graphics'
+# description:      'Software engineer with a keen interest in computer graphics'
 url:              http://hyde.getpoole.com
 baseurl:          /
 

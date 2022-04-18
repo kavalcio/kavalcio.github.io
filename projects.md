@@ -55,7 +55,33 @@ Here you can find some of the projects I have worked on in the past.
 
 <hr>
 
-<!------------------------ MindUnite ------------------------>
+<!------------------------ TODO: Three.js Solar System Model ------------------------>
+<!-- <div id="proj2" class="collapsible">
+    <div class="collapsible-arrow-container">
+        <div id="proj2-arrow" class="collapsible-arrow"></div>
+    </div>
+    <div class="collapsible-title">Three.js Solar System Model</div>
+</div>
+<div id="proj2-content" class="collapsible-content">
+    -- Under Construction --
+</div>
+
+<hr> -->
+
+<!------------------------ TODO: LeukoFight ------------------------>
+<!-- <div id="proj2" class="collapsible">
+    <div class="collapsible-arrow-container">
+        <div id="proj2-arrow" class="collapsible-arrow"></div>
+    </div>
+    <div class="collapsible-title">LeukoFight</div>
+</div>
+<div id="proj2-content" class="collapsible-content">
+    -- Under Construction --
+</div>
+
+<hr> -->
+
+<!------------------------ TODO: MindUnite ------------------------>
 <!-- <div id="proj2" class="collapsible">
     <div class="collapsible-arrow-container">
         <div id="proj2-arrow" class="collapsible-arrow"></div>
@@ -68,7 +94,7 @@ Here you can find some of the projects I have worked on in the past.
 
 <hr> -->
 
-<!------------------------ Computer Graphics (CSC317) ------------------------>
+<!------------------------ TODO: Computer Graphics (CSC317) ------------------------>
 <!-- <div id="proj3" class="collapsible">
     <div class="collapsible-arrow-container">
         <div id="proj3-arrow" class="collapsible-arrow"></div>
@@ -81,7 +107,7 @@ Here you can find some of the projects I have worked on in the past.
 </div>
 <hr> -->
 
-<!------------------------ Machine Learning Labs (ECE420) ------------------------>
+<!------------------------ TODO: Machine Learning Labs (ECE420) ------------------------>
 <!-- <div id="proj4" class="collapsible">
     <div class="collapsible-arrow-container">
         <div id="proj4-arrow" class="collapsible-arrow"></div>
@@ -94,7 +120,7 @@ Here you can find some of the projects I have worked on in the past.
 </div>
 <hr> -->
 
-<!------------------------ Pneumatic Engine ------------------------>
+<!------------------------ TODO: Pneumatic Engine ------------------------>
 <!-- <div id="proj7" class="collapsible">
     <div class="collapsible-arrow-container">
         <div id="proj7-arrow" class="collapsible-arrow"></div>

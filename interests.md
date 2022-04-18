@@ -10,7 +10,7 @@ Interested in things related to film
 Photography
 Woodworking -->
 
-I am a film buff and have made several amateur short films of my own, some of which you can find below.
+I like film! Below you can find some of the shorts I've worked on in the past.
 <!-- <iframe width="420" height="315"
 src="https://www.youtube.com/watch?v=0IENwmScTAA">
 </iframe> -->

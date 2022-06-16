@@ -30,7 +30,7 @@ Here you can find some of the projects I have worked on in the past.
     <div class="collapsible-arrow-container">
         <div id="proj2-arrow" class="collapsible-arrow"></div>
     </div>
-    <div class="collapsible-title">LeukoFight</div>
+    <div class="collapsible-title">LeukoFight - Unity Game</div>
 </div>
 <div id="proj2-content" class="collapsible-content">
     <div class="proj-subheader">Created a 2D side-scroller action game on the Unity engine.</div>

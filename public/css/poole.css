@@ -291,6 +291,9 @@ tbody tr:nth-child(odd) th {
   padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
 

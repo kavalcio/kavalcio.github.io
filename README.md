@@ -3,3 +3,5 @@
 
 
 <!-- TODO -->
+<!-- Images don't wrap on smaller screens, fix that -->
+<!-- Host images outside of repo instead of bundling them -->

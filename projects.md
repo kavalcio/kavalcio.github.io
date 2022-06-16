@@ -25,6 +25,36 @@ Here you can find some of the projects I have worked on in the past.
 
 <hr>
 
+<!------------------------ LeukoFight ------------------------>
+<div id="proj2" class="collapsible">
+    <div class="collapsible-arrow-container">
+        <div id="proj2-arrow" class="collapsible-arrow"></div>
+    </div>
+    <div class="collapsible-title">LeukoFight</div>
+</div>
+<div id="proj2-content" class="collapsible-content">
+    <div class="proj-subheader">Created a 2D side-scroller action game on the Unity engine.</div>
+    <div class="proj-img-container">
+        <img class="proj-img" src="../images/leukofight_2.png">
+    </div>
+    I am creating a 2D side-scroller action game named LeukoFight
+    where you play as a white blood cell fighting off infections in a body.<br><br>
+    I built the project on Unity and used C# scripts to implement the following features among others:<br>
+    • Customized movement and collision system<br>
+    • 4 functional enemy types with unique behaviour, models and stats<br>
+    • Sprite-based animation controller for player character and all enemies<br>
+    • A playable scene and a menu screen<br>
+    <div class="proj-img-container">
+        <img class="proj-img" style="margin-right:5px;width:40%;" src="../images/leukofight_5.png">
+        <img class="proj-img" src="../images/leukofight_3.png">
+    </div>
+    <div class="proj-img-container">
+        <img class="proj-img" src="../images/leukofight_4.png">
+    </div>
+</div>
+
+<hr>
+
 <!------------------------ UTRA Combat Robot ------------------------>
 <div id="proj6" class="collapsible">
     <div class="collapsible-arrow-container">
@@ -61,19 +91,6 @@ Here you can find some of the projects I have worked on in the past.
         <div id="proj2-arrow" class="collapsible-arrow"></div>
     </div>
     <div class="collapsible-title">Three.js Solar System Model</div>
-</div>
-<div id="proj2-content" class="collapsible-content">
-    -- Under Construction --
-</div>
-
-<hr> -->
-
-<!------------------------ TODO: LeukoFight ------------------------>
-<!-- <div id="proj2" class="collapsible">
-    <div class="collapsible-arrow-container">
-        <div id="proj2-arrow" class="collapsible-arrow"></div>
-    </div>
-    <div class="collapsible-title">LeukoFight</div>
 </div>
 <div id="proj2-content" class="collapsible-content">
     -- Under Construction --

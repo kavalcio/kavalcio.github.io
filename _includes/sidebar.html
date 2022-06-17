@@ -3,9 +3,7 @@
     <img class="headshot" src="/../images/headshot.jpg">
     <div class="sidebar-about">
       <h1>
-        <a href="{{ site.baseurl }}">
-          {{ site.title }}
-        </a>
+        {{ site.title }}
       </h1>
       <!-- <p class="lead">{{ site.description }}</p> -->
     </div>
@@ -21,8 +19,6 @@
       <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ '/projects' | relative_url }}">Projects</a>
       <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ '/interests' | relative_url }}">Interests</a>
       <br>
-
-      <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
     </nav>
 
     <div class="sidebar-bottom-row">

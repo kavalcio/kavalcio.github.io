@@ -87,6 +87,10 @@
     overflow: hidden;
 }
 
+.proj-img-container.no-fixed-height {
+    height: auto;
+}
+
 .proj-icon-container {
     display: flex;
     width: 100%;

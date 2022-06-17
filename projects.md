@@ -19,8 +19,6 @@ Here you can find some of the projects I have worked on in the past.
         <img class="proj-img" src="../images/adp_image.png">
     </div>
     For my Capstone project, I was part of a 3-people team that designed and built a web-based annotation tool for populating a tissue histology image database. The purpose of this database is to train machine learning models in various areas of computational pathology (like cancer detection).
-    <!-- <br><br> -->
-
 </div>
 
 <hr>
@@ -55,6 +53,27 @@ Here you can find some of the projects I have worked on in the past.
 
 <hr>
 
+<!------------------------ Three.js Solar System Model ------------------------>
+<div id="proj10" class="collapsible">
+    <div class="collapsible-arrow-container">
+        <div id="proj10-arrow" class="collapsible-arrow"></div>
+    </div>
+    <div class="collapsible-title">Three.js Star System Model</div>
+</div>
+<div id="proj10-content" class="collapsible-content">
+    <div class="proj-subheader">Created a 3D model of a star system using Three.js.</div>
+    <div class="proj-img-container no-fixed-height">
+        <img class="proj-img" src="../images/solar.png">
+    </div>
+    I created a model of a star system using Three.js, a Javascript library that utilizes WebGL to render graphics on a browser.<br><br>
+    • Added shaders to create a bloom effect for the sun<br>
+    • Implemented support for planets that orbit the central star and moons that orbit their respective planets<br>
+    • Designed an object hierarchy that allows recursively rendering and transforming all celestial bodies in the system<br>
+    • Created a simple GUI for camera and environment controls<br>
+</div>
+
+<hr>
+
 <!------------------------ UTRA Combat Robot ------------------------>
 <div id="proj6" class="collapsible">
     <div class="collapsible-arrow-container">
@@ -84,19 +103,6 @@ Here you can find some of the projects I have worked on in the past.
 </div>
 
 <hr>
-
-<!------------------------ TODO: Three.js Solar System Model ------------------------>
-<!-- <div id="proj2" class="collapsible">
-    <div class="collapsible-arrow-container">
-        <div id="proj2-arrow" class="collapsible-arrow"></div>
-    </div>
-    <div class="collapsible-title">Three.js Solar System Model</div>
-</div>
-<div id="proj2-content" class="collapsible-content">
-    -- Under Construction --
-</div>
-
-<hr> -->
 
 <!------------------------ TODO: MindUnite ------------------------>
 <!-- <div id="proj2" class="collapsible">

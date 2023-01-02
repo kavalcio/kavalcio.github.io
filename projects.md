@@ -3,7 +3,6 @@ layout: page
 title: Projects
 ---
 Here you can find some of the projects I have worked on in the past.
-<hr>
 
 <!--------------------------- ADP --------------------------->
 <div id="proj1" class="collapsible">
@@ -20,8 +19,6 @@ Here you can find some of the projects I have worked on in the past.
     </div>
     For my Capstone project, I was part of a 3-people team that designed and built a web-based annotation tool for populating a tissue histology image database. The purpose of this database is to train machine learning models in various areas of computational pathology (like cancer detection).
 </div>
-
-<hr>
 
 <!------------------------ LeukoFight ------------------------>
 <div id="proj2" class="collapsible">
@@ -51,8 +48,6 @@ Here you can find some of the projects I have worked on in the past.
     </div>
 </div>
 
-<hr>
-
 <!------------------------ Three.js Solar System Model ------------------------>
 <div id="proj10" class="collapsible">
     <div class="collapsible-arrow-container">
@@ -71,8 +66,6 @@ Here you can find some of the projects I have worked on in the past.
     • Designed an object hierarchy that allows recursively rendering and transforming all celestial bodies in the system<br>
     • Created a simple GUI for camera and environment controls<br>
 </div>
-
-<hr>
 
 <!------------------------ UTRA Combat Robot ------------------------>
 <div id="proj6" class="collapsible">
@@ -102,8 +95,6 @@ Here you can find some of the projects I have worked on in the past.
 
 </div>
 
-<hr>
-
 <!------------------------ TODO: MindUnite ------------------------>
 <!-- <div id="proj2" class="collapsible">
     <div class="collapsible-arrow-container">
@@ -114,8 +105,7 @@ Here you can find some of the projects I have worked on in the past.
 <div id="proj2-content" class="collapsible-content">
     -- Under Construction --
 </div>
-
-<hr> -->
+-->
 
 <!------------------------ TODO: Computer Graphics (CSC317) ------------------------>
 <!-- <div id="proj3" class="collapsible">
@@ -128,7 +118,7 @@ Here you can find some of the projects I have worked on in the past.
     * Lorem ipsum
     * Dolor sit amet
 </div>
-<hr> -->
+-->
 
 <!------------------------ TODO: Machine Learning Labs (ECE420) ------------------------>
 <!-- <div id="proj4" class="collapsible">
@@ -141,7 +131,7 @@ Here you can find some of the projects I have worked on in the past.
     * Lorem ipsum
     * Dolor sit amet
 </div>
-<hr> -->
+-->
 
 <!------------------------ TODO: Pneumatic Engine ------------------------>
 <!-- <div id="proj7" class="collapsible">
@@ -154,10 +144,10 @@ Here you can find some of the projects I have worked on in the past.
     * Lorem ipsum
     * Dolor sit amet
 </div>
-<hr> -->
+-->
 
 <!------------------------ BMEC 2017 ------------------------>
-<div id="proj8" class="collapsible">
+<!-- <div id="proj8" class="collapsible">
     <div class="collapsible-arrow-container">
         <div id="proj8-arrow" class="collapsible-arrow"></div>
     </div>
@@ -171,7 +161,7 @@ Here you can find some of the projects I have worked on in the past.
     </div>
     I participated in the Biomedical Engineering Competition (BMEC 2017) organized by the Club for Undergraduate Biomedical Engineering (CUBE) at the University of Toronto. Our goal was to design a text communication device catered towards individuals living with cerebral palsy. Along with several teammates, I designed and built a functional prototype for a specialized keyboard over the course of two days. We presented our design to a team of judges made up of IBBME professors and experts.
 </div>
-<hr>
+-->
 
 <!------------------------ Maze Game ------------------------>
 <div id="proj9" class="collapsible">
@@ -194,7 +184,6 @@ Here you can find some of the projects I have worked on in the past.
     • Testing code functionality using a simulation via ModelSim<br>
     • Launching project onto a live FPGA using Quartus Prime
 </div>
-<hr>
 
 <!------------------------ This Website ------------------------>
 <div id="proj5" class="collapsible">

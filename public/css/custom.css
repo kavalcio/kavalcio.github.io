@@ -187,3 +187,49 @@
     width: 100%;
     margin-top: auto;
 }
+
+.t-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.t-cell {
+    /* background: teal; */
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #efefef;
+}
+
+@media (max-width: 80em) {
+    .t-cell {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+.t-cell-image {
+    border: 0;
+    width: 100%;
+    aspect-ratio: 1/0.7;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.t-cell-image:hover {
+    filter: brightness(0.6);
+}
+
+.t-cell-title {
+    font-weight: bold;
+}
+
+.t-cell-description {
+    font-size: 14px;
+    line-height: 20px;
+}

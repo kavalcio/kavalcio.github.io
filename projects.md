@@ -13,6 +13,7 @@ Here you can find some of the projects I have worked on in the past.
     <a href='#proj-maze'>6. FPGA-based Maze Traversal Game</a>
 </ol>
 
+<!--------------------------- Three.js Screensavers --------------------------->
 <div id='proj-threejs-screensavers' class="proj-container">
     <a href='#proj-threejs-screensavers' class="proj-title">Three.js Screensavers</a>
     <div class="proj-subheader">Recreation of some one of the classic screensavers from the Windows XP operating system, built using Three.js.</div>
@@ -39,6 +40,22 @@ Here you can find some of the projects I have worked on in the past.
             description="A wise man once said the internet is \"a series of tubes\". What is this, if not a metaphor for the vastly interconnected world we live in today? <br> My favourite among the XP screensavers, originally referred to as 3D Pipes."
             img="../images/pipes.png"
             playUrl="https://three-js-screen-savers.vercel.app/pipes.html"
+            githubUrl="https://github.com/kavalcio/three-js-screen-savers"
+        %}
+    </div>
+</div>
+
+<!--------------------------- Three.js Dither Shader --------------------------->
+<div id='proj-threejs-screensavers' class="proj-container">
+    <a href='#proj-threejs-screensavers' class="proj-title">Three.js & GLSL - Dither Shader</a>
+    <div class="proj-subheader">Series of shaders written in GLSL deployed on Three.js that apply different forms of dithering to a sample image.</div>
+    <div class="proj-content horizontal">
+        {%
+            include cell.html
+            title="Dither Shaders"
+            description="I've implemented several dithering shaders (which are traditionally used to reduce the effects of quantization error in audiovisual data) using GLSL ranging from a simple random threshold dither to ordered dithering with Bayer matrices. You may test out the different algorithms using the options in the GUI."
+            img="../images/dither.png"
+            playUrl="https://three-js-screen-savers.vercel.app/dither.html"
             githubUrl="https://github.com/kavalcio/three-js-screen-savers"
         %}
     </div>

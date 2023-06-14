@@ -6,11 +6,12 @@ Here you can find some of the projects I have worked on in the past.
 
 <ol class='project-list'>
     <a href='#proj-threejs-screensavers'>1. Three.js Screensavers</a>
-    <a href='#proj-adp'>2. Atlas of Digital Pathology - Tissue Annotation Tool</a>
-    <a href='#proj-leukofight'>3. LeukoFight - Unity Game</a>
-    <a href='#proj-threejs-solar'>4. Three.js Solar System</a>
-    <a href='#proj-utra'>5. Combat Robot Design</a>
-    <a href='#proj-maze'>6. FPGA-based Maze Traversal Game</a>
+    <a href='#proj-threejs-dither'>2. Three.js & GLSL - Dither Shader</a>
+    <a href='#proj-adp'>3. Atlas of Digital Pathology - Tissue Annotation Tool</a>
+    <a href='#proj-leukofight'>4. LeukoFight - Unity Game</a>
+    <a href='#proj-threejs-solar'>5. Three.js Solar System</a>
+    <a href='#proj-utra'>6. Combat Robot Design</a>
+    <a href='#proj-maze'>7. FPGA-based Maze Traversal Game</a>
 </ol>
 
 <!--------------------------- Three.js Screensavers --------------------------->
@@ -46,8 +47,8 @@ Here you can find some of the projects I have worked on in the past.
 </div>
 
 <!--------------------------- Three.js Dither Shader --------------------------->
-<div id='proj-threejs-screensavers' class="proj-container">
-    <a href='#proj-threejs-screensavers' class="proj-title">Three.js & GLSL - Dither Shader</a>
+<div id='proj-threejs-dither' class="proj-container">
+    <a href='#proj-threejs-dither' class="proj-title">Three.js & GLSL - Dither Shader</a>
     <div class="proj-subheader">Series of shaders written in GLSL deployed on Three.js that apply different forms of dithering to a sample image.</div>
     <div class="proj-content horizontal">
         {%

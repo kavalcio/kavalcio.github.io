@@ -2,7 +2,10 @@
 layout: page
 title: About Me
 ---
-<!-- I am a bla bla bla. -->
+
+<br>
+Enthusiastic and results-driven software developer with a robust background in full-stack development within dynamic web environments. My passion lies in creative coding, demonstrated by personal projects that blend technical expertise with a flair for innovative and interactive design. Eager to bring a unique blend of technical skills and creative thinking to contribute to forward-thinking projects in the software development realm.
+
 <hr>
 
 ## Education:
@@ -15,48 +18,47 @@ title: About Me
   </div>
   <div class="work-line">University of Toronto, Department of Electrical and Computer Engineering</div>
 </div>
+
+<div class="work-container">
+  <div class="work-title">
+    <img class="work-icon" src="/../images/circuitstream.jpg">
+    <div class="work-title-left"> XR Development with Unity</div>
+    <div class="work-title-right">October 2022 - December 2022</div>
+  </div>
+  <div class="work-line">University of Toronto – School of Continuing Studies + Circuit Stream</div>
+  <div class="work-line">• Completed a 10-week, project-oriented program on VR/AR development using the Unity engine.</div>
+</div>
+
 <hr>
 
 ## Experience:
+
 <div class="work-container">
   <div class="work-title">
     <img class="work-icon" src="/../images/lumiq.jpg">
     <div class="work-title-left"> FULL STACK DEVELOPER 𑁋 LumiQ</div>
     <div class="work-title-right">June 2021 - Current</div>
   </div>
-  <div class="work-line">• Continuous development of a podcast platform in the form of a web app and native app</div>
-  <div class="work-line">• Used React and React Native extensively to implement and maintain features</div>
-  <div class="work-line">• Expanded the functionality of microservices deployed on Kubernetes</div>
-  <div class="work-line">• Undertook an optimization project that reduced native app render times significantly</div>
-  <div class="work-line">• Participated in major refactoring to support the U.S. expansion of the company</div>
-</div>
-
-<div class="work-container">
-  <div class="work-title">
-    <img class="work-icon" src="/../images/adp.png">
-    <div class="work-title-left"> FULL STACK DEVELOPER 𑁋 Atlas of Digital Pathology</div>
-    <div class="work-title-right">September 2020 - May 2021</div>
-  </div>
-  <div class="work-line">• Designed and built a web-based tool used for populating a dataset of annotated tissue slides</div>
-  <div class="work-line">• Collaborated with academics to refine the annotation workflow</div>
-  <div class="work-line">• Implemented numerous features on the entire web stack using Javascript and PHP</div>
-  <div class="work-line">• Prepared frequent reports and presentations for faculty members</div>
-  <div class="work-line">• Constructed and performed iterative migrations on a database with MySQL</div>
+  <div class="work-hook">Contributed to the continuous development of a professional education platform for finance professionals.</div>
+  <div class="work-line">• Utilized React and React Native extensively to implement and maintain responsive front-end applications.</div>
+  <div class="work-line">• Engineered the client app network layer from scratch using Redux Saga integrated with a PostgREST API.</div>
+  <div class="work-line">• Expanded the functionality of Node.js microservices running on Docker and Kubernetes.</div>
+  <div class="work-line">• Played a pivotal role in a major overhaul to facilitate the U.S. expansion of the company.</div>
+  <div class="work-line">• Collaborated closely with UI/UX designers to implement visually appealing and intuitive user interfaces.</div>
+  <div class="work-line">• Identified and addressed technical debt, ensuring maintainability and scalability of the codebase.</div>
 </div>
 
 <div class="work-container">
   <div class="work-title">
     <img class="work-icon" src="/../images/modiface.png">
-    <div class="work-title-left"> FULL STACK DEVELOPER 𑁋 Modiface Inc. (Co-op)</div>
+    <div class="work-title-left"> FULL STACK DEVELOPER 𑁋 Modiface</div>
     <div class="work-title-right">June 2019 - August 2020</div>
   </div>
-  <div class="work-line">• Contributed to the development of a web-based CMS used by international beauty brands</div>
-  <div class="work-line">• Used a stack including established frameworks like Laravel and Vue.js</div>
-  <div class="work-line">• Maintained and expanded a RESTful API based in PHP</div>
-  <div class="work-line">• Improved existing code through refactoring and applied modern design patterns</div>
-  <div class="work-line">• Participated in team code reviews and mob programming sessions</div>
-  <div class="work-line">• Adapted to a fast development cycle with a CI/CD pipeline</div>
-  <div class="work-line">• Practiced Agile methods of software development</div>
+  <div class="work-hook">Contributed to the development of a Content Management System used by international beauty brands.</div>
+  <div class="work-line">• Employed a robust tech stack with frameworks like Laravel and Vue.js.</div>
+  <div class="work-line">• Maintained and expanded a RESTful API based in PHP with an Eloquent ORM interface.</div>
+  <div class="work-line">• Actively participated in team code reviews and mob programming sessions.</div>
+  <div class="work-line">• Worked in a fast-paced development cycle with an automated CI/CD pipeline.</div>
 </div>
 
 <div class="work-container">
@@ -65,9 +67,8 @@ title: About Me
     <div class="work-title-left"> PROGRAMMING INSTRUCTOR 𑁋 Real Programming 4 Kids</div>
     <div class="work-title-right">July - September 2018</div>
   </div>
-  <div class="work-line">• Taught programming and game development classes to children aged 7 to 17</div>
-  <div class="work-line">• Used multiple languages including Visual Basic and Java</div>
-  <div class="work-line">• Managed multiple students with vastly different levels of knowledge in the same classroom</div>
-  <div class="work-line">• Modified course content and methods to fit the learning style and speed of each student</div>
-  <div class="work-line">• Debugged student code and helped students implement extra features</div>
+  <div class="work-hook">Delivered engaging programming and game development classes to a diverse group of students.</div>
+  <div class="work-line">• Instructed using multiple languages, including Visual Basic and Java, providing students with a comprehensive understanding of programming concepts.</div>
+  <div class="work-line">• Managed classrooms with students possessing varying levels of knowledge, tailoring teaching methods to accommodate individual learning styles and paces.</div>
+  <div class="work-line">• Provided hands-on support at debugging code and guided students in implementing extra features.</div>
 </div>

@@ -26,6 +26,12 @@
     font-weight: bold;
 }
 
+.work-hook {
+  margin-inline-start: 45px;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
 .work-line {
     margin-inline-start: 45px;
 }

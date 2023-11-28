@@ -188,7 +188,7 @@
     background: #efefef;
 }
 
-@media (max-width: 80em) {
+@media (max-width: 72em) {
     .t-cell {
         width: 100%;
         padding: 30px;

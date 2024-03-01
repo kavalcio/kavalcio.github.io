@@ -1,6 +1,6 @@
 {
   "name": "-kavalcio-github-io",
-  "homepage": "https://kavalcio.github.io",
+  "base": "/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

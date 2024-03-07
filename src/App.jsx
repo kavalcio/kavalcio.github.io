@@ -1,36 +1,58 @@
-import React, { useState } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
-import { Header } from './components/Header';
+import { THEME } from './constants/theme';
+
+import Home from './pages/Home';
+import Error from './pages/Error';
+import Projects from './pages/Projects';
+import Project from './pages/Project';
+import AppRoot from './pages/AppRoot';
+import Experience from './pages/Experience';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <AppRoot />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+        errorElement: <Error />,
+      },
+      {
+        path: '/about',
+        element: <div />,
+      },
+      {
+        path: '/experience',
+        element: <Experience />,
+      },
+      {
+        path: '/projects',
+        element: <Projects />,
+      },
+      {
+        path: '/projects/:projectId',
+        element: <Project />,
+      },
+      {
+        path: '/contact',
+        element: <div>Contact</div>,
+      },
+    ],
+  },
+]);
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  const theme = createTheme(THEME);
+  console.log({ theme });
   return (
-    <>
-      <Header />
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   );
 };
 

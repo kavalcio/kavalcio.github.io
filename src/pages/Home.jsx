@@ -1,30 +1,54 @@
-import { useState } from 'react';
+import { Box, Typography } from '@mui/material';
+
+import { EXPERIENCE, PROJECTS } from '@/constants';
+import { ExperienceTile, ProjectTile } from '@/components';
 
 const Home = () => {
   return (
-    <>
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div> */}
-      {/* <h1>Vite + React</h1> */}
-      {/* <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-    </>
+    <Box sx={styles.pageContainer}>
+      <Typography variant="h1">about me</Typography>
+      <Typography variant="h1">experience</Typography>
+      <Box sx={styles.sectionContainer}>
+        {EXPERIENCE.map((exp) => (
+          <ExperienceTile key={exp.id} experience={exp} />
+        ))}
+      </Box>
+      <Typography variant="h1">projects</Typography>
+      <Box sx={styles.sectionContainer}>
+        {/* <Box sx={styles.indexContainer}>Index</Box> */}
+        <Box sx={styles.itemListContainer}>
+          {PROJECTS.map((prj) => (
+            <ProjectTile key={prj.id} project={prj} />
+          ))}
+        </Box>
+      </Box>
+    </Box>
   );
+};
+
+const styles = {
+  pageContainer: {
+    mt: 10,
+    display: 'flex',
+    flexDirection: 'column',
+    // flex: 1,
+    // width: '100%',
+    alignItems: 'center',
+    // p: 3,
+  },
+  sectionContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    maxWidth: 900,
+  },
+  indexContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  itemListContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
 };
 
 export default Home;

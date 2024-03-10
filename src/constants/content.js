@@ -6,14 +6,14 @@ export const EXPERIENCE = [
     icon: 'src/assets/images/lumiq.jpg',
     dateFrom: 'June 2021',
     dateTo: 'Present',
-    hook: 'Contributed to the continuous development of a professional education platform for finance professionals.',
+    hook: 'Contributed to the continuous development of a professional education platform for finance professionals',
     description: [
-      'Utilized React and React Native extensively to implement and maintain responsive front-end applications.',
-      'Engineered the client app network layer from scratch using Redux Saga integrated with a PostgREST API.',
-      'Expanded the functionality of Node.js microservices running on Docker and Kubernetes.',
-      'Played a pivotal role in a major overhaul to facilitate the U.S. expansion of the company.',
-      'Collaborated closely with UI/UX designers to implement visually appealing and intuitive user interfaces.',
-      'Identified and addressed technical debt, ensuring maintainability and scalability of the codebase.',
+      'Utilized React and React Native extensively to implement and maintain responsive front-end applications',
+      'Engineered the client app network layer from scratch using Redux Saga integrated with a PostgREST API',
+      'Expanded the functionality of Node.js microservices running on Docker and Kubernetes',
+      'Played a pivotal role in a major overhaul to facilitate the U.S. expansion of the company',
+      'Collaborated closely with UI/UX designers to implement visually appealing and intuitive user interfaces',
+      'Identified and addressed technical debt, ensuring maintainability and scalability of the codebase',
     ],
     tech: [
       'React',
@@ -32,14 +32,29 @@ export const EXPERIENCE = [
     icon: 'src/assets/images/modiface.png',
     dateFrom: 'June 2019',
     dateTo: 'August 2020',
-    hook: 'Contributed to the development of a Content Management System used by international beauty brands.',
+    hook: 'Contributed to the development of a Content Management System used by international beauty brands',
     description: [
-      'Employed a robust tech stack with frameworks like Laravel and Vue.js.',
-      'Maintained and expanded a RESTful API based in PHP with an Eloquent ORM interface.',
-      'Actively participated in team code reviews and mob programming sessions.',
-      'Worked in a fast-paced development cycle with an automated CI/CD pipeline.',
+      'Employed a robust tech stack with frameworks like Laravel and Vue.js',
+      'Maintained and expanded a RESTful API based in PHP with an Eloquent ORM interface',
+      'Actively participated in team code reviews and mob programming sessions',
+      'Worked in a fast-paced development cycle with an automated CI/CD pipeline',
     ],
     tech: ['Laravel', 'Vue.js', 'PHP', 'MySQL'],
+  },
+  {
+    id: 'rp4k',
+    title: 'Programming Instructor',
+    employer: 'Real Programming 4 Kids',
+    icon: 'src/assets/images/rp4k.jpg',
+    dateFrom: 'July 2018',
+    dateTo: 'September 2018',
+    hook: 'Delivered engaging programming and game development classes to a diverse group of students',
+    description: [
+      'Instructed using multiple languages, including Visual Basic and Java, providing students with a comprehensive understanding of programming concepts',
+      'Managed classrooms with students possessing varying levels of knowledge, tailoring teaching methods to accommodate individual learning styles and pace',
+      'Provided hands-on support at debugging code and guided students in implementing extra features',
+    ],
+    tech: [],
   },
 ];
 
@@ -64,66 +79,56 @@ export const EDUCATION = [
   },
 ];
 
-export const PROJECTS = {
-  screensavers: {
+export const PROJECTS = [
+  {
     id: 'screensavers',
     title: 'Windows XP Screensavers',
-    hook: 'Recreation of some one of the classic screensavers from the Windows XP operating system, built using Three.js.',
+    hook: 'Recreation of some one of the classic screensavers from the Windows XP operating system, built using Three.js',
     img: 'src/assets/mystify.png',
     tech: ['Three.js'],
-    // playUrl: 'https://three-js-screen-savers.vercel.app/mystify.html',
-    // githubUrl: 'https://github.com/kavalcio/three-js-screen-savers',
+    playUrl: 'https://three-js-screen-savers.vercel.app/mystify.html',
+    githubUrl: 'https://github.com/kavalcio/three-js-screen-savers',
   },
-  dither: {
+  {
     id: 'dither',
     title: 'Dither Shaders',
-    hook: 'Series of shaders written in GLSL deployed on Three.js that apply different forms of dithering to a sample image.',
+    hook: 'Series of shaders written in GLSL rendered with Three.js that apply different forms of dithering (ranging from a simple random threshold dither to ordered dithering with Bayer matrices) to a sample image. Dithering is traditionally used to reduce the effects of quantization error in audiovisual data.',
     img: 'src/assets/dither.png',
     tech: ['Three.js', 'GLSL'],
     // playUrl: 'https://three-js-screen-savers.vercel.app/dither.html',
     // githubUrl:
   },
-  'tissue-annotation': {
+  {
     id: 'tissue-annotation',
-    name: 'Atlas of Digital Pathology - Tissue Annotation Tool',
-    hook: 'Created a web-based image annotation tool for computational pathology research.',
+    title: 'Atlas of Digital Pathology - Tissue Annotation Tool',
+    hook: 'Created a web-based image annotation tool for computational pathology research',
     img: 'src/assets/adp_image.png',
     tech: [],
     playUrl: 'https://www.dsp.utoronto.ca/projects/ADP/',
   },
-  'combat-robot': {
+  {
     id: 'combat-robot',
-    name: 'Combat Robot Design',
-    hook: 'Lead a university team in designing and building an RC combat robot.',
+    title: 'Combat Robot Design',
+    hook: 'Lead a university team in designing and building an RC combat robot',
     description: `Between 2018-2020, I co-led the Combat division of the UofT Robotics Association.
       During this time we designed, manufactured and assembled a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.<br><br>
       We competed in RoboBrawl 2019 at the University of Illinois Urbana-Champaign and ranked 8th place out of 30+ teams from various universities around North America.`,
     img: 'src/assets/utra_1.jpg',
     tech: [],
   },
-  'dev-portfolio': {
+  {
     id: 'dev-portfolio',
-    name: 'This Website',
+    title: 'This Website',
     img: 'src/assets/portfolio-1.png',
     tech: ['React'],
   },
-  'fashion-portfolio': {
+  {
     id: 'fashion-portfolio',
-    name: 'Fashion Designer Portfolio',
+    title: 'Fashion Designer Portfolio',
     img: 'src/assets/portfolio-2.png',
     tech: ['Next.js', 'Typescript'],
   },
-};
-
-// <ol class='project-list'>
-//     <a href='#proj-threejs-screensavers'>1. Three.js Screensavers</a>
-//     <a href='#proj-threejs-dither'>2. Three.js & GLSL - Dither Shader</a>
-//     <a href='#proj-adp'>3. Atlas of Digital Pathology - Tissue Annotation Tool</a>
-//     <a href='#proj-leukofight'>4. LeukoFight - Unity Game</a>
-//     <a href='#proj-threejs-solar'>5. Three.js Solar System</a>
-//     <a href='#proj-utra'>6. Combat Robot Design</a>
-//     <a href='#proj-maze'>7. FPGA-based Maze Traversal Game</a>
-// </ol>
+];
 
 // <!--------------------------- Three.js Screensavers --------------------------->
 // <div id='proj-threejs-screensavers' class="proj-container">

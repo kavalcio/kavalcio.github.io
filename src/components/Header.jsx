@@ -3,54 +3,81 @@ import { AppBar, Box, Typography } from '@mui/material';
 
 const Header = () => (
   <AppBar sx={styles.header}>
-    <Box sx={styles.leftContainer}>
+    <Box sx={styles.homeButton}>
       <Link to="/">
-        <Typography sx={styles.link}>Sarp Kavalcioglu</Typography>
+        <Typography sx={styles.homeText}>sk</Typography>
       </Link>
     </Box>
     <Box sx={styles.rightContainer}>
-      <Link to="/about">
-        <Typography sx={styles.link}>About</Typography>
-      </Link>
-      <Link to="/experience">
-        <Typography sx={styles.link}>Experience</Typography>
-      </Link>
-      <Link to="/projects">
-        <Typography sx={styles.link}>Projects</Typography>
-      </Link>
-      {/* <Link to="/contact">
-        <Typography sx={styles.link}>Contact</Typography>
-      </Link> */}
+      <Box sx={styles.linkButton}>
+        <Link to="/about">
+          <Typography sx={styles.linkText}>about</Typography>
+        </Link>
+      </Box>
+      <Box sx={styles.linkButton}>
+        <Link to="/experience">
+          <Typography sx={styles.linkText}>experience</Typography>
+        </Link>
+      </Box>
+      <Box sx={styles.linkButton}>
+        <Link to="/projects">
+          <Typography sx={styles.linkText}>projects</Typography>
+        </Link>
+      </Box>
+      <Box sx={styles.linkButton}>
+        <Link to="/contact">
+          <Typography sx={styles.linkText}>contact</Typography>
+        </Link>
+      </Box>
     </Box>
   </AppBar>
 );
 
 const styles = {
-  header: {
+  header: (theme) => ({
     display: 'flex',
     flexDirection: 'row',
-    background: 'transparent',
-    boxShadow: 'none',
+    // background: 'transparent',
+    background: theme.palette.backgroundTransparent,
+    // boxShadow: 'none',
+    boxShadow: '0 10px 30px -15px background',
     height: 'fit-content',
     justifyContent: 'space-between',
+    alignItems: 'center',
     border: 0,
-  },
-  leftContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-  },
+    backdropFilter: 'blur(10px)',
+    '-webkit-backdrop-filter': 'blur(10px)',
+  }),
   rightContainer: {
     display: 'flex',
     flexDirection: 'row',
+    // mr: 1,
   },
-  link: {
-    px: 2,
-    py: 2,
+  homeButton: {
+    // mx: 4,
+    // my: 6,
+    m: 2,
+    color: 'red',
+  },
+  homeText: {
+    fontSize: 48,
+    color: 'white',
+    lineHeight: 1,
+  },
+  linkButton: {
+    m: 2,
+  },
+  linkText: {
+    // fontWeight: 600,
+    // px: 2,
+    // py: 2,
     color: 'white',
     transition: 'all 0.2s ease',
     borderBottom: '2px solid transparent',
     '&:hover': {
-      borderColor: 'white',
+      // px: 2,
+      color: 'purple2',
+      borderColor: 'purple2',
       // px: 3,
     },
   },

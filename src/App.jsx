@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import './App.css';
-import { THEME } from './constants/theme';
+import { THEME } from '@/constants';
 
 import Home from './pages/Home';
 import Error from './pages/Error';

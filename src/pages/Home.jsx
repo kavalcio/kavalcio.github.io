@@ -1,7 +1,12 @@
 import { Box, Typography } from '@mui/material';
 
 import { EXPERIENCE, PROJECTS } from '@/constants';
-import { ExperienceTile, ProjectTile } from '@/components';
+import {
+  ExperienceTile,
+  ProjectTile,
+  ContactForm,
+  ContactIcons,
+} from '@/components';
 
 const Home = () => {
   return (
@@ -22,6 +27,9 @@ const Home = () => {
           ))}
         </Box>
       </Box>
+      <Typography variant="h1">contact</Typography>
+      <ContactForm />
+      <ContactIcons />
     </Box>
   );
 };

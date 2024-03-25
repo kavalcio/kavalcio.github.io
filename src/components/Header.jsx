@@ -63,6 +63,10 @@ const styles = {
     fontSize: 48,
     color: 'white',
     lineHeight: 1,
+    transition: 'all 0.2s ease',
+    '&:hover': {
+      color: 'purple2',
+    },
   },
   linkButton: {
     m: 2,

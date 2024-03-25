@@ -10,7 +10,7 @@ const ExperienceTile = ({ experience }) => {
           {experience.title}
           <Typography
             component="a"
-            href="https://google.com"
+            href={experience.employerUrl}
             target="_blank"
             rel="noreferrer"
             sx={styles.employer}

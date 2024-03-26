@@ -1,57 +1,44 @@
 import { Link, useLocation } from 'react-router-dom';
-import { AppBar, Box, Typography } from '@mui/material';
+import {
+  AppBar,
+  Box,
+  Typography,
+  useTheme,
+  useScrollTrigger,
+} from '@mui/material';
 
-// TODO: make header hide when scrolling down
-// TODO: hightlight selected route
-// TODO: get routes from constant file, same for AppRouter
+import { PRIMARY_ROUTES } from '@/constants';
+
 const Header = () => {
-  const { pathname } = useLocation();
-  console.log(location.pathname);
+  const { pathname: currentPath } = useLocation();
+  const theme = useTheme();
+
+  const trigger = useScrollTrigger({
+    threshold: theme.dimensions.header.height,
+  });
+
   return (
-    <AppBar sx={styles.header}>
+    <AppBar sx={[styles.header, trigger ? styles.hidden : styles.visible]}>
       <Box sx={styles.homeButton}>
         <Link to="/">
           <Typography sx={styles.homeText}>[sk]</Typography>
         </Link>
       </Box>
       <Box sx={styles.rightContainer}>
-        <Box
-          sx={[styles.linkButton, pathname === '/about' && styles.currentRoute]}
-        >
-          <Link to="/about">
-            <Typography sx={styles.linkText}>about</Typography>
-          </Link>
-        </Box>
-        <Box
-          sx={[
-            styles.linkButton,
-            pathname === '/experience' && styles.currentRoute,
-          ]}
-        >
-          <Link to="/experience">
-            <Typography sx={styles.linkText}>experience</Typography>
-          </Link>
-        </Box>
-        <Box
-          sx={[
-            styles.linkButton,
-            pathname === '/projects' && styles.currentRoute,
-          ]}
-        >
-          <Link to="/projects">
-            <Typography sx={styles.linkText}>projects</Typography>
-          </Link>
-        </Box>
-        <Box
-          sx={[
-            styles.linkButton,
-            pathname === '/contact' && styles.currentRoute,
-          ]}
-        >
-          <Link to="/contact">
-            <Typography sx={styles.linkText}>contact</Typography>
-          </Link>
-        </Box>
+        {PRIMARY_ROUTES.map((route) => (
+          <Box key={route.path} sx={[styles.linkButton]}>
+            <Link to={route.path}>
+              <Typography
+                sx={[
+                  styles.linkText,
+                  currentPath === route.path && styles.currentRoute,
+                ]}
+              >
+                {route.name.toLowerCase()}
+              </Typography>
+            </Link>
+          </Box>
+        ))}
       </Box>
     </AppBar>
   );
@@ -61,26 +48,27 @@ const styles = {
   header: (theme) => ({
     display: 'flex',
     flexDirection: 'row',
-    // background: 'transparent',
     background: theme.palette.backgroundTransparent,
-    // boxShadow: 'none',
     boxShadow: '0 10px 30px -15px background',
-    // height: 'fit-content',
     height: theme.dimensions.header.height,
     justifyContent: 'space-between',
     alignItems: 'center',
     border: 0,
     backdropFilter: 'blur(10px)',
     '-webkit-backdrop-filter': 'blur(10px)',
+    transition: 'top 0.25s ease-out',
   }),
+  visible: {
+    top: 0,
+  },
+  hidden: {
+    top: (theme) => theme.dimensions.header.height * -1,
+  },
   rightContainer: {
     display: 'flex',
     flexDirection: 'row',
-    // mr: 1,
   },
   homeButton: {
-    // mx: 4,
-    // my: 6,
     m: 2,
     color: 'red',
   },
@@ -97,21 +85,16 @@ const styles = {
     m: 2,
   },
   linkText: {
-    // fontWeight: 600,
-    // px: 2,
-    // py: 2,
     color: 'white',
     transition: 'all 0.2s ease',
     borderBottom: '2px solid transparent',
     '&:hover': {
-      // px: 2,
       color: 'purple2',
       borderColor: 'purple2',
-      // px: 3,
     },
   },
   currentRoute: {
-    // background: 'red',
+    borderColor: 'white',
   },
 };
 

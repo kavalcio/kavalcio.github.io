@@ -6,12 +6,14 @@ import {
   ProjectTile,
   ContactForm,
   ContactIcons,
+  AboutMe,
 } from '@/components';
 
 const Home = () => {
   return (
     <Box sx={styles.pageContainer}>
       <Typography variant="h1">about me</Typography>
+      <AboutMe />
       <Typography variant="h1">experience</Typography>
       <Box sx={styles.sectionContainer}>
         {EXPERIENCE.map((exp) => (
@@ -27,7 +29,7 @@ const Home = () => {
           ))}
         </Box>
       </Box>
-      <Typography variant="h1">contact</Typography>
+      {/* <Typography variant="h1">contact</Typography> */}
       <ContactForm />
       <ContactIcons />
     </Box>
@@ -36,7 +38,8 @@ const Home = () => {
 
 const styles = {
   pageContainer: {
-    mt: 10,
+    pt: 10,
+    pb: 10,
     display: 'flex',
     flexDirection: 'column',
     // flex: 1,

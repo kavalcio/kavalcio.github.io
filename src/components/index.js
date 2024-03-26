@@ -4,3 +4,4 @@ export { default as Pill } from './Pill';
 export { default as Header } from './Header';
 export { default as ContactForm } from './ContactForm';
 export { default as ContactIcons } from './ContactIcons';
+export { default as AboutMe } from './AboutMe';

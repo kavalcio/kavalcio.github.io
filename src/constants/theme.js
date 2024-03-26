@@ -8,6 +8,7 @@ export const THEME = {
     background: '#242424',
     backgroundTransparent: 'rgba(36, 36, 36, 0.9)',
   },
+  // TODO: update default font
   typography: {
     // fontFamily: 'Tahoma',
     // fontFamily: 'Inter',
@@ -30,7 +31,7 @@ export const THEME = {
   },
   dimensions: {
     header: {
-      height: 60,
+      height: 80,
     },
   },
 };

@@ -86,7 +86,7 @@ export const PROJECTS = [
   {
     id: 'screensavers',
     title: 'Windows XP Screensavers',
-    hook: 'Recreation of some one of the classic screensavers from the Windows XP operating system, built using Three.js.',
+    hook: 'Recreation of several iconic screensavers from the Windows XP operating system.',
     img: 'src/assets/images/mystify.png',
     tech: ['Three.js'],
     playUrl: 'https://three-js-screen-savers.vercel.app',
@@ -104,31 +104,31 @@ export const PROJECTS = [
   {
     id: 'tissue-annotation',
     title: 'Atlas of Digital Pathology - Tissue Annotation Tool',
-    hook: 'Created a web-based image annotation tool for computational pathology research.',
+    hook: 'A web-based image annotation tool for computational pathology research.',
     img: 'src/assets/images/adp_image.png',
     tech: [],
     playUrl: 'https://www.dsp.utoronto.ca/projects/ADP/',
   },
   {
     id: 'combat-robot',
-    title: 'Combat Robot Design',
-    hook: 'Lead a university team in designing and building a remote controlled combat robot.',
+    title: 'Annie - RC Combat Robot',
+    hook: 'Lead a university robotics team in designing and building a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.',
     description: `Between 2018-2020, I co-led the Combat division of the UofT Robotics Association.
       During this time we designed, manufactured and assembled a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.
       We competed in RoboBrawl 2019 at the University of Illinois and ranked 8th place out of 30+ teams from various universities across the US and Canada.`,
     img: 'src/assets/images/utra_2.jpg',
     tech: [],
   },
-  {
-    id: 'dev-portfolio',
-    title: 'This Website',
-    img: 'src/assets/images/portfolio-1.png',
-    tech: ['React'],
-  },
+  // {
+  //   id: 'dev-portfolio',
+  //   title: 'This Website',
+  //   img: 'src/assets/images/portfolio-1.png',
+  //   tech: ['React'],
+  // },
   {
     id: 'fashion-portfolio',
     title: 'Fashion Designer Portfolio',
-    img: 'src/assets/images/portfolio-2.png',
+    img: 'src/assets/images/fashion-portfolio.png',
     tech: ['Next.js', 'Typescript'],
   },
 ];

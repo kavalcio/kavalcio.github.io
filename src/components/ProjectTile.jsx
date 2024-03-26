@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
+import NotesIcon from '@mui/icons-material/Notes';
 
 import { Pill } from '@/components';
 
@@ -42,6 +43,9 @@ const ProjectTile = ({ project }) => {
               <PlayArrowRoundedIcon sx={styles.icon} />
             </Box>
           )}
+          <Box sx={styles.iconButton}>
+            <NotesIcon sx={styles.icon} />
+          </Box>
         </Box>
       </Box>
     </Box>
@@ -63,6 +67,7 @@ const styles = {
   image: {
     objectFit: 'cover',
     minWidth: 400,
+    width: 400,
     height: 300,
     // mb: 2,
     borderRadius: 2,
@@ -83,7 +88,7 @@ const styles = {
     },
   },
   hook: {
-    fontSize: 16,
+    fontSize: 14,
     color: 'textSecondary',
   },
   date: {

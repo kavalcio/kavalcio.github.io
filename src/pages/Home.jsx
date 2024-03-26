@@ -1,37 +1,12 @@
 import { Box, Typography } from '@mui/material';
 
-import { EXPERIENCE, PROJECTS } from '@/constants';
-import {
-  ExperienceTile,
-  ProjectTile,
-  ContactForm,
-  ContactIcons,
-  AboutMe,
-} from '@/components';
+import { AboutMe } from '@/components';
 
 const Home = () => {
   return (
     <Box sx={styles.pageContainer}>
       <Typography variant="h1">about me</Typography>
       <AboutMe />
-      <Typography variant="h1">experience</Typography>
-      <Box sx={styles.sectionContainer}>
-        {EXPERIENCE.map((exp) => (
-          <ExperienceTile key={exp.id} experience={exp} />
-        ))}
-      </Box>
-      <Typography variant="h1">projects</Typography>
-      <Box sx={styles.sectionContainer}>
-        {/* <Box sx={styles.indexContainer}>Index</Box> */}
-        <Box sx={styles.itemListContainer}>
-          {PROJECTS.map((prj) => (
-            <ProjectTile key={prj.id} project={prj} />
-          ))}
-        </Box>
-      </Box>
-      {/* <Typography variant="h1">contact</Typography> */}
-      <ContactForm />
-      <ContactIcons />
     </Box>
   );
 };

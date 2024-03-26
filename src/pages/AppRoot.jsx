@@ -1,12 +1,15 @@
 import { Outlet } from 'react-router-dom';
 import { Box } from '@mui/material';
 
-import { Header } from '@/components';
+import { Footer, Header } from '@/components';
 
 const AppRoot = () => {
   return (
     <Box
       sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
         maxWidth: '1280px',
         margin: '0 auto',
         // width: '100%',
@@ -17,6 +20,7 @@ const AppRoot = () => {
     >
       <Header />
       <Outlet />
+      <Footer />
     </Box>
   );
 };

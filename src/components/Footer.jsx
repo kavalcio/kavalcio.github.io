@@ -3,7 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-const ContactIcons = () => (
+const Footer = () => (
   <Box sx={styles.container}>
     <Box
       component="a"
@@ -35,7 +35,9 @@ const ContactIcons = () => (
   </Box>
 );
 const styles = {
-  container: {},
+  container: {
+    pb: 10,
+  },
   iconButton: {
     p: 1,
     '&:hover > svg:nth-of-type(1)': {
@@ -52,4 +54,4 @@ const styles = {
   },
 };
 
-export default ContactIcons;
+export default Footer;

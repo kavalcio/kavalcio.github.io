@@ -4,7 +4,14 @@ import { Pill } from '@/components';
 const ExperienceTile = ({ experience }) => {
   return (
     <Box sx={styles.container}>
-      <Box component="img" sx={styles.icon} src={experience.icon} />
+      <Box
+        component="a"
+        href={experience.employerUrl}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Box component="img" sx={styles.icon} src={experience.icon} />
+      </Box>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <Typography sx={styles.title}>
           {experience.title}
@@ -64,6 +71,11 @@ const styles = {
     // mb: 2,
     mr: 3,
     borderRadius: 1,
+    // transition: 'all 0.15s ease',
+    filter: 'sepia(100%) hue-rotate(210deg) saturate(300%)',
+    // '&:hover': {
+    //   opacity: 0.8,
+    // },
   },
   title: {
     fontSize: 20,

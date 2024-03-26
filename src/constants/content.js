@@ -129,6 +129,7 @@ export const PROJECTS = [
     id: 'fashion-portfolio',
     title: 'Fashion Designer Portfolio',
     img: 'src/assets/images/fashion-portfolio.png',
+    playUrl: 'https://charlotte-claytor.vercel.app/',
     tech: ['Next.js', 'Typescript'],
   },
 ];

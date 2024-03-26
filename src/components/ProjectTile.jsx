@@ -5,12 +5,14 @@ import NotesIcon from '@mui/icons-material/Notes';
 
 import { Pill } from '@/components';
 
+// TODO: what should clicking the title do if there is no playUrl? maybe it should just open a project details page
+// TODO: where should description go?
 const ProjectTile = ({ project }) => {
   return (
     <Box sx={styles.container}>
       <Box component="img" sx={styles.image} src={project.img} />
       <Box sx={styles.textContainer}>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
+        <a href={project.playUrl} target="_blank" rel="noreferrer">
           <Typography sx={styles.title}>{project.title}</Typography>
         </a>
         <Typography sx={styles.hook}>{project.hook}</Typography>

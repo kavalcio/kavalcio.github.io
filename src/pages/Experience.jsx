@@ -3,6 +3,7 @@ import { ExperienceTile, PageContainer } from '@/components';
 import { EXPERIENCE } from '@/constants';
 
 // TODO; add index here
+// TODO: add link to full resume here?
 const Experience = () => {
   return (
     <PageContainer>

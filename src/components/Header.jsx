@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import {
   AppBar,
   Box,
@@ -13,12 +14,29 @@ const Header = () => {
   const { pathname: currentPath } = useLocation();
   const theme = useTheme();
 
-  const trigger = useScrollTrigger({
+  const [isBelowThreshold, setIsBelowThreshold] = useState(true);
+  const isScrollingDown = useScrollTrigger({
     threshold: theme.dimensions.header.height,
   });
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsBelowThreshold(window.scrollY < theme.dimensions.header.height);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [theme.dimensions.header.height]);
+
   return (
-    <AppBar sx={[styles.header, trigger ? styles.hidden : styles.visible]}>
+    <AppBar
+      sx={[
+        styles.header,
+        isScrollingDown ? styles.hidden : styles.visible,
+        isBelowThreshold && styles.headerNoBorder,
+      ]}
+    >
       <Box sx={styles.homeButton}>
         <Link to="/">
           <Typography sx={styles.homeText}>[sk]</Typography>
@@ -56,8 +74,11 @@ const styles = {
     border: 0,
     backdropFilter: 'blur(10px)',
     '-webkit-backdrop-filter': 'blur(10px)',
-    transition: 'top 0.25s ease-out',
+    transition: 'all 0.25s ease-out',
   }),
+  headerNoBorder: {
+    boxShadow: 'none !important',
+  },
   visible: {
     top: 0,
   },

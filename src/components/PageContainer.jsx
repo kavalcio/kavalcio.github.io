@@ -6,7 +6,7 @@ const PageContainer = ({ children }) => {
 
 const styles = {
   pageContainer: {
-    pt: 5,
+    pt: (theme) => `${theme.dimensions.header.height}px`,
     pb: 10,
     display: 'flex',
     flexDirection: 'column',

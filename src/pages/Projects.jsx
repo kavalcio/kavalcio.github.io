@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { PROJECTS } from '@/constants';
 import { PageContainer, ProjectTile } from '@/components';
 
@@ -7,6 +7,9 @@ const Projects = () => {
   return (
     // {/* <Box sx={styles.indexContainer}>Index</Box> */}
     <PageContainer>
+      <Typography variant="h2" sx={styles.title}>
+        projects
+      </Typography>
       <Box sx={styles.itemListContainer}>
         {PROJECTS.map((prj) => (
           <ProjectTile key={prj.id} project={prj} />
@@ -21,6 +24,9 @@ const styles = {
     display: 'grid',
     // flexDirection: 'column',
     // gridTemplateColumns: '50% 50% !important',
+  },
+  title: {
+    mb: 5,
   },
 };
 

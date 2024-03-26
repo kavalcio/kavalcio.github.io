@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material';
 
 import { AboutMe } from '@/components';
 
+// TODO: add some fun interactive animation or something to some part of the page
 const Home = () => {
   return (
     <Box sx={styles.pageContainer}>

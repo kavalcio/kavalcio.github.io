@@ -7,20 +7,26 @@ const AppRoot = () => {
   return (
     <Box
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        maxWidth: '1280px',
-        margin: '0 auto',
-        // width: '100%',
         height: '100vh',
-        pt: ({ dimensions }) => `${dimensions.header.height}px`,
-        px: 3,
+        display: 'flex',
       }}
     >
-      <Header />
-      <Outlet />
-      <Footer />
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          maxWidth: '1280px',
+          margin: '0 auto',
+          pt: ({ dimensions }) => `${dimensions.header.height}px`,
+          px: 4,
+        }}
+      >
+        <Header />
+        <Outlet />
+        <Footer />
+      </Box>
     </Box>
   );
 };

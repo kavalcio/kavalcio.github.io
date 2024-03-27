@@ -2,9 +2,8 @@ import { Box, Typography } from '@mui/material';
 import { Link } from '@mui/material';
 
 // TODO: add some ornament to page wrapper, it looks a bit plain
-// TODO: make page at least as tall as window, and if it's shorter than window don't let it scroll
-// TODO: anchor footer to the bottom
-const AboutMe = () => {
+// TODO: improve bio text
+const About = () => {
   // TODO: fill
   return (
     <Box sx={styles.container}>
@@ -43,8 +42,7 @@ const styles = {
     maxWidth: 900,
   },
   headshot: (theme) => ({
-    // mr: 3,
-    ml: 3,
+    ml: 4,
     objectFit: 'cover',
     width: 350,
     height: 350,
@@ -65,7 +63,7 @@ const styles = {
   },
   bodyText: {
     mb: 2,
-    fontSize: 18,
+    fontSize: 16,
   },
   introText: {
     mb: 2,
@@ -76,7 +74,7 @@ const styles = {
     fontWeight: 'bold',
     color: 'purple2',
     lineHeight: 1,
-    mb: 2,
+    mb: 3,
   },
   link: {
     color: 'purple2',
@@ -88,4 +86,4 @@ const styles = {
   },
 };
 
-export default AboutMe;
+export default About;

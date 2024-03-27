@@ -1,13 +1,13 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 
-import { AboutMe } from '@/components';
+import { About } from '@/components';
 
 // TODO: add some fun interactive animation or something to some part of the page
+// TODO: add links to other pages here
 const Home = () => {
   return (
     <Box sx={styles.pageContainer}>
-      {/* <Typography variant="h1">about me</Typography> */}
-      <AboutMe />
+      <About />
     </Box>
   );
 };
@@ -18,10 +18,9 @@ const styles = {
     pb: 10,
     display: 'flex',
     flexDirection: 'column',
-    // flex: 1,
-    // width: '100%',
     alignItems: 'center',
-    // p: 3,
+    justifyContent: 'center',
+    height: '100%',
   },
   sectionContainer: {
     display: 'flex',

@@ -6,6 +6,7 @@ import NotesIcon from '@mui/icons-material/Notes';
 import { Pill } from '@/components';
 
 // TODO: what should clicking the title do if there is no playUrl? maybe it should just open a project details page
+// TODO: what should clicking the image do? maybe it should open a project details page
 // TODO: where should description go?
 const ProjectTile = ({ project }) => {
   return (
@@ -17,11 +18,13 @@ const ProjectTile = ({ project }) => {
         </a>
         <Typography sx={styles.hook}>{project.hook}</Typography>
         {/* <Typography sx={styles.description}>{project.description}</Typography> */}
-        <Box sx={styles.pillContainer}>
-          {project.tech?.map((tech, index) => (
-            <Pill key={index} text={tech} />
-          ))}
-        </Box>
+        {project.tech?.length > 0 && (
+          <Box sx={styles.pillContainer}>
+            {project.tech.map((tech, index) => (
+              <Pill key={index} text={tech} />
+            ))}
+          </Box>
+        )}
         <Box sx={styles.bottomContainer}>
           {project.githubUrl && (
             <Box
@@ -45,40 +48,47 @@ const ProjectTile = ({ project }) => {
               <PlayArrowRoundedIcon sx={styles.icon} />
             </Box>
           )}
-          <Box sx={styles.iconButton}>
+          {/* <Box sx={styles.iconButton}>
             <NotesIcon sx={styles.icon} />
-          </Box>
+          </Box> */}
         </Box>
       </Box>
     </Box>
   );
 };
 
+// TODO: dont use loose colors, get from theme
 const styles = {
   container: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
     border: '2px solid transparent',
-    borderRadius: 2,
+    borderRadius: 4,
     p: 3,
-    mb: 3,
+    // mb: 3,
     textAlign: 'left',
     transition: 'all 0.15s ease',
+    maxWidth: 350,
+    '&:hover': {
+      borderColor: 'rgba(110, 80, 220, 0.5)',
+      backgroundColor: 'rgba(110, 80, 220, 0.1)',
+    },
   },
   image: {
     objectFit: 'cover',
-    minWidth: 400,
-    width: 400,
-    height: 300,
-    // mb: 2,
+    width: '100%',
+    mb: 2,
     borderRadius: 2,
-    mr: 3,
+    // mr: 3,
     border: '2px solid rgba(110, 80, 220, 0.5)',
+    aspectRatio: '4 / 3',
   },
   textContainer: {
     display: 'flex',
     flexDirection: 'column',
+    // alignItems: 'left',
+    width: '100%',
   },
   title: {
     fontSize: 20,
@@ -113,10 +123,11 @@ const styles = {
   },
   bottomContainer: {
     display: 'flex',
-    alignItems: 'center',
-    mt: 2,
+    // alignItems: 'left',
+    // mt: 2,
   },
   iconButton: {
+    mt: 2,
     mr: 1,
     // cursor: 'pointer',
     '&:hover > svg:nth-of-type(1)': {

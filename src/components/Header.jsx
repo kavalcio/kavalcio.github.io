@@ -10,6 +10,7 @@ import {
 
 import { PRIMARY_ROUTES } from '@/constants';
 
+// TODO: this spills out on mobile view
 const Header = () => {
   const { pathname: currentPath } = useLocation();
   const theme = useTheme();
@@ -66,6 +67,7 @@ const styles = {
   header: (theme) => ({
     display: 'flex',
     flexDirection: 'row',
+    px: 2,
     background: theme.palette.backgroundTransparent,
     boxShadow: '0 10px 30px -15px background',
     height: theme.dimensions.header.height,
@@ -90,13 +92,12 @@ const styles = {
     flexDirection: 'row',
   },
   homeButton: {
-    m: 2,
+    mx: 2,
     color: 'red',
   },
   homeText: {
-    fontSize: 48,
+    fontSize: 38,
     color: 'white',
-    lineHeight: 1,
     transition: 'all 0.2s ease',
     '&:hover': {
       color: 'purple2',

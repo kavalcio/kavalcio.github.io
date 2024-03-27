@@ -20,11 +20,17 @@ const Projects = () => {
 };
 
 const styles = {
-  itemListContainer: {
+  itemListContainer: (theme) => ({
     display: 'grid',
-    // flexDirection: 'column',
-    // gridTemplateColumns: '50% 50% !important',
-  },
+    gridTemplateColumns: '33% 33% 33%',
+    [theme.breakpoints.down('lg')]: {
+      gridTemplateColumns: '50% 50%',
+    },
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      flexDirection: 'column',
+    },
+  }),
   title: {
     mb: 5,
   },

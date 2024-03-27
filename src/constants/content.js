@@ -1,3 +1,5 @@
+// TODO: add typescript for each object here
+
 export const EXPERIENCE = [
   {
     id: 'lumiq',
@@ -102,17 +104,15 @@ export const PROJECTS = [
     githubUrl: 'https://github.com/kavalcio/three-js-screen-savers',
   },
   {
-    id: 'tissue-annotation',
-    title: 'Atlas of Digital Pathology - Tissue Annotation Tool',
-    hook: 'A web-based image annotation tool for computational pathology research.',
-    img: 'src/assets/images/adp_image.png',
-    tech: [],
-    playUrl: 'https://www.dsp.utoronto.ca/projects/ADP/',
+    id: 'inkblot',
+    title: 'Rorschach Inkblot Generator',
+    img: 'src/assets/images/inkblot.png',
+    tech: ['Three.js', 'GLSL'],
   },
   {
     id: 'combat-robot',
     title: 'Annie - RC Combat Robot',
-    hook: 'Lead a university robotics team in designing and building a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.',
+    hook: 'Lead a university robotics team in designing and building a 30lbs remote controlled robot to fight in an arena deathmatch against other robots. We competed in RoboBrawl 2019 at the University of Illinois and ranked 8th place out of 30+ teams from various universities across the US and Canada.',
     description: `Between 2018-2020, I co-led the Combat division of the UofT Robotics Association.
       During this time we designed, manufactured and assembled a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.
       We competed in RoboBrawl 2019 at the University of Illinois and ranked 8th place out of 30+ teams from various universities across the US and Canada.`,
@@ -129,8 +129,26 @@ export const PROJECTS = [
     id: 'fashion-portfolio',
     title: 'Fashion Designer Portfolio',
     img: 'src/assets/images/fashion-portfolio.png',
+    hook: 'Simple portfolio website for a fashion and costume designer built using Next.js.',
     playUrl: 'https://charlotte-claytor.vercel.app/',
+    githubUrl: 'https://github.com/kavalcio/char-portfolio',
     tech: ['Next.js', 'Typescript'],
+  },
+  {
+    id: 'tissue-annotation',
+    title: 'Tissue Annotation Tool',
+    hook: 'A web-based image annotation tool used to populate a tissue histology image database for computational pathology research.',
+    img: 'src/assets/images/adp_image.png',
+    playUrl: 'https://www.dsp.utoronto.ca/projects/ADP/',
+    tech: [],
+  },
+  {
+    id: 'maze-game',
+    title: 'Hardware-based Maze Game',
+    img: 'src/assets/images/maze.png',
+    hook: 'A maze traversal game built using Verilog code on a field-programmable gate array (FPGA). Created I/O modules for user input and image output to the display, performed simulation testing using ModelSim.',
+    // playUrl: 'https://charlotte-claytor.vercel.app/',
+    tech: ['Verilog', 'Computer Hardware', 'ModelSim'],
   },
 ];
 
@@ -241,35 +259,6 @@ export const PROJECTS = [
 // </div>
 
 // <img onclick="scrollToTop()" id="scroll-to-top" title="Go to top" src='../images/scroll_top.png'>
-
-// <script>
-//     // Smooth scroll to project when link is clicked
-//     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//         anchor.addEventListener('click', function (e) {
-//             e.preventDefault();
-//             const hash = anchor.href.split('#')[1];
-//             history.pushState({}, '', '#' + hash)
-//             document.querySelector(this.getAttribute('href')).scrollIntoView({
-//                 behavior: 'smooth'
-//             });
-//         });
-//     });
-
-//     // Scroll to top when button is clicked
-//     function scrollToTop() {
-//         window.scrollTo({ top: 0 });
-//     }
-
-//     // When the user scrolls down 20px from the top of the document, show the button
-//     let scrollToTopButton = document.getElementById("scroll-to-top");
-//     window.onscroll = () => {
-//         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//             scrollToTopButton.style.display = "block";
-//         } else {
-//             scrollToTopButton.style.display = "none";
-//         }
-//     };
-// </script>
 
 // <!------------------------ TODO: Pneumatic Engine ------------------------>
 // <!-- <div id="proj7" class="collapsible">

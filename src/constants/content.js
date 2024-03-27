@@ -108,7 +108,7 @@ export const PROJECTS = [
   {
     id: 'inkblot',
     title: 'Rorschach Inkblot Generator',
-    hook: 'A shader that generates shifting inkblot patterns using Three.js and GLSL.',
+    hook: 'A shader that generates shifting inkblot patterns using Perlin noise and several layers of filtering.',
     img: 'src/assets/images/inkblot.png',
     tech: ['Three.js', 'GLSL'],
     playUrl: 'https://three-js-screen-savers.vercel.app/inkblot.html',

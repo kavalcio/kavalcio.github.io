@@ -11,6 +11,7 @@ import {
 import { PRIMARY_ROUTES } from '@/constants';
 
 // TODO: this spills out on mobile view
+// TODO: make text not pure white, make it kinda gray
 const Header = () => {
   const { pathname: currentPath } = useLocation();
   const theme = useTheme();
@@ -97,7 +98,7 @@ const styles = {
   },
   homeText: {
     fontSize: 38,
-    color: 'white',
+    color: 'textPrimary',
     transition: 'all 0.2s ease',
     '&:hover': {
       color: 'purple2',
@@ -107,7 +108,7 @@ const styles = {
     m: 2,
   },
   linkText: {
-    color: 'white',
+    color: 'textPrimary',
     transition: 'all 0.2s ease',
     borderBottom: '2px solid transparent',
     '&:hover': {

@@ -6,7 +6,7 @@ import { AboutMe } from '@/components';
 const Home = () => {
   return (
     <Box sx={styles.pageContainer}>
-      <Typography variant="h1">about me</Typography>
+      {/* <Typography variant="h1">about me</Typography> */}
       <AboutMe />
     </Box>
   );

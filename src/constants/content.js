@@ -97,7 +97,9 @@ export const PROJECTS = [
   {
     id: 'dither',
     title: 'Dither Shaders',
-    hook: 'Series of shaders written in GLSL rendered with Three.js that apply different forms of dithering (ranging from a simple random threshold dither to ordered dithering with Bayer matrices) to a sample image. Dithering is traditionally used to reduce the effects of quantization error in audiovisual data.',
+    hook: `Series of shaders written in GLSL rendered with Three.js that apply different forms of dithering
+    (from a simple random threshold dither to ordered Bayer dithering) to a sample image.
+    Dithering is traditionally used to reduce the effects of quantization error in audiovisual data.`,
     img: 'src/assets/images/dither.png',
     tech: ['Three.js', 'GLSL'],
     playUrl: 'https://three-js-screen-savers.vercel.app/dither.html',
@@ -106,16 +108,22 @@ export const PROJECTS = [
   {
     id: 'inkblot',
     title: 'Rorschach Inkblot Generator',
+    hook: 'A shader that generates shifting inkblot patterns using Three.js and GLSL.',
     img: 'src/assets/images/inkblot.png',
     tech: ['Three.js', 'GLSL'],
+    playUrl: 'https://three-js-screen-savers.vercel.app/inkblot.html',
+    githubUrl:
+      'https://github.com/kavalcio/three-js-screen-savers/blob/main/src/pages/inkblot.js',
   },
   {
     id: 'combat-robot',
     title: 'Annie - RC Combat Robot',
-    hook: 'Lead a university robotics team in designing and building a 30lbs remote controlled robot to fight in an arena deathmatch against other robots. We competed in RoboBrawl 2019 at the University of Illinois and ranked 8th place out of 30+ teams from various universities across the US and Canada.',
-    description: `Between 2018-2020, I co-led the Combat division of the UofT Robotics Association.
-      During this time we designed, manufactured and assembled a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.
-      We competed in RoboBrawl 2019 at the University of Illinois and ranked 8th place out of 30+ teams from various universities across the US and Canada.`,
+    hook: `Lead a university robotics team in designing and building a 30lbs remote controlled robot to fight in
+    an arena deathmatch against other robots. We competed in RoboBrawl 2019 at the University of Illinois and ranked
+    8th place out of 30+ teams from various universities across the US and Canada.`,
+    // description: `Between 2018-2020, I co-led the Combat division of the UofT Robotics Association.
+    //   During this time we designed, manufactured and assembled a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.
+    //   We competed in RoboBrawl 2019 at the University of Illinois and ranked 8th place out of 30+ teams from various universities across the US and Canada.`,
     img: 'src/assets/images/utra_2.jpg',
     tech: [],
   },
@@ -146,8 +154,8 @@ export const PROJECTS = [
     id: 'maze-game',
     title: 'Hardware-based Maze Game',
     img: 'src/assets/images/maze.png',
-    hook: 'A maze traversal game built using Verilog code on a field-programmable gate array (FPGA). Created I/O modules for user input and image output to the display, performed simulation testing using ModelSim.',
-    // playUrl: 'https://charlotte-claytor.vercel.app/',
+    hook: `A maze traversal game built using Verilog code on a field-programmable gate array (FPGA). Created I/O modules
+    for user input and image output to the display, performed simulation testing using ModelSim.`,
     tech: ['Verilog', 'Computer Hardware', 'ModelSim'],
   },
 ];

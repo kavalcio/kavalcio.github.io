@@ -1,8 +1,8 @@
 export const PRIMARY_ROUTES = [
-  {
-    path: '/about',
-    name: 'About',
-  },
+  // {
+  //   path: '/about',
+  //   name: 'About',
+  // },
   {
     path: '/experience',
     name: 'Experience',

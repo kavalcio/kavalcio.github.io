@@ -43,7 +43,7 @@ export const EXPERIENCE = [
       'Actively participated in team code reviews and mob programming sessions',
       'Worked in a fast-paced development cycle with an automated CI/CD pipeline',
     ],
-    tech: ['Laravel', 'Vue.js', 'PHP', 'MySQL'],
+    tech: ['Vue.js', 'Laravel', 'PHP', 'MySQL'],
   },
   {
     id: 'rp4k',
@@ -59,7 +59,7 @@ export const EXPERIENCE = [
       'Managed classrooms with students possessing varying levels of knowledge, tailoring teaching methods to accommodate individual learning styles and pace',
       'Provided hands-on support at debugging code and guided students in implementing extra features',
     ],
-    tech: [],
+    tech: ['Visual Basic', 'Java'],
   },
 ];
 

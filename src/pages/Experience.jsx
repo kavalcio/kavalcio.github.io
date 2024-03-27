@@ -4,6 +4,7 @@ import { EXPERIENCE } from '@/constants';
 
 // TODO; add index here
 // TODO: add link to full resume here?
+// TODO: add education here?
 const Experience = () => {
   return (
     <PageContainer>

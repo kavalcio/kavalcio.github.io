@@ -1,6 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import { Pill } from '@/components';
 
+// TODO: try to fix the phantom border on hover
+// TODO: test this app in safari, see if we need -webkit css properties
 const ExperienceTile = ({ experience }) => {
   return (
     <Box sx={styles.container}>
@@ -58,8 +60,8 @@ const styles = {
     textAlign: 'left',
     transition: 'all 0.15s ease',
     '&:hover': {
-      borderColor: 'rgba(110, 80, 220, 0.5)',
-      backgroundColor: 'rgba(110, 80, 220, 0.1)',
+      borderColor: 'purpleTransparent1',
+      backgroundColor: 'purpleTransparent2',
     },
     // '&:hover > p:nth-of-type(1)': {
     //   color: 'purple2',

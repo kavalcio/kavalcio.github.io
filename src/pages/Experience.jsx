@@ -1,8 +1,8 @@
 import { Box, Typography } from '@mui/material';
-import { ExperienceTile, PageContainer } from '@/components';
+
+import { Button, ExperienceTile, PageContainer } from '@/components';
 import { EXPERIENCE } from '@/constants';
 
-// TODO; add index here
 // TODO: add link to full resume here?
 // TODO: add education here?
 const Experience = () => {
@@ -16,6 +16,9 @@ const Experience = () => {
           <ExperienceTile key={exp.id} experience={exp} />
         ))}
       </Box>
+      <Button href="/resume.pdf" target="_blank">
+        View full resume
+      </Button>
     </PageContainer>
   );
 };

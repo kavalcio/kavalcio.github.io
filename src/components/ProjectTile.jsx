@@ -71,8 +71,8 @@ const styles = {
     transition: 'all 0.15s ease',
     maxWidth: 350,
     '&:hover': {
-      borderColor: 'rgba(110, 80, 220, 0.5)',
-      backgroundColor: 'rgba(110, 80, 220, 0.1)',
+      borderColor: 'purpleTransparent1',
+      backgroundColor: 'purpleTransparent2',
     },
   },
   image: {
@@ -80,14 +80,12 @@ const styles = {
     width: '100%',
     mb: 2,
     borderRadius: 2,
-    // mr: 3,
-    border: '2px solid rgba(110, 80, 220, 0.5)',
+    border: (theme) => `2px solid ${theme.palette.purpleTransparent1}`,
     aspectRatio: '4 / 3',
   },
   textContainer: {
     display: 'flex',
     flexDirection: 'column',
-    // alignItems: 'left',
     width: '100%',
   },
   title: {

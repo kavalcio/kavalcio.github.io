@@ -81,6 +81,7 @@ const styles = {
     color: 'purple2',
     textDecoration: 'none',
     fontWeight: 'bold',
+    transition: 'all 0.15s ease',
     '&:hover': {
       color: 'purple3',
     },

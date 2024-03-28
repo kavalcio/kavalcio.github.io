@@ -1,10 +1,18 @@
-import { PageContainer } from '@/components';
+import { Button, PageContainer } from '@/components';
 
-// TODO; fill
 const Contact = () => {
-  return <PageContainer />;
+  return (
+    <PageContainer>
+      Want to say hi?
+      <Button
+        sx={{ mt: 3 }}
+        href="mailto:sarpkavalcioglu@gmail.com?subject=Hi Sarp"
+        target="_blank"
+      >
+        Send me a message
+      </Button>
+    </PageContainer>
+  );
 };
-
-const styles = {};
 
 export default Contact;

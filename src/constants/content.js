@@ -124,12 +124,15 @@ export const PROJECTS = [
     img: 'src/assets/images/utra_2.jpg',
     tech: [],
   },
-  // {
-  //   id: 'dev-portfolio',
-  //   title: 'This Website',
-  //   img: 'src/assets/images/portfolio-1.png',
-  //   tech: ['React'],
-  // },
+  {
+    id: 'dev-portfolio',
+    title: 'This Website',
+    hook: 'Recursion! A portfolio website showcasing my projects and experience, built using React.',
+    img: 'src/assets/images/dev-portfolio.png',
+    playUrl: 'https://kavalcio.github.io/',
+    githubUrl: 'https://github.com/kavalcio/kavalcio.github.io',
+    tech: ['React'],
+  },
   {
     id: 'fashion-portfolio',
     title: 'Fashion Designer Portfolio',
@@ -189,22 +192,6 @@ export const PROJECTS = [
 //     </div>
 // </div>
 
-// <!--------------------------- Three.js Dither Shader --------------------------->
-// <div id='proj-threejs-dither' class="proj-container">
-//     <a href='#proj-threejs-dither' class="proj-title">Three.js & GLSL - Dither Shader</a>
-//     <div class="proj-subheader">Series of shaders written in GLSL deployed on Three.js that apply different forms of dithering to a sample image.</div>
-//     <div class="proj-content horizontal">
-//         {%
-//             include cell.html
-//             title="Dither Shaders"
-//             description="I've implemented several dithering shaders (which are traditionally used to reduce the effects of quantization error in audiovisual data) using GLSL ranging from a simple random threshold dither to ordered dithering with Bayer matrices. You may test out the different algorithms using the options in the GUI."
-//             img="../images/dither.png"
-//             playUrl="https://three-js-screen-savers.vercel.app/dither.html"
-//             githubUrl="https://github.com/kavalcio/three-js-screen-savers"
-//         %}
-//     </div>
-// </div>
-
 // <!--------------------------- ADP --------------------------->
 // <div id='proj-adp' class="proj-container">
 //     <a href='#proj-adp' class="proj-title">Atlas of Digital Pathology - Tissue Annotation Tool</a>
@@ -244,28 +231,7 @@ export const PROJECTS = [
 //     </div>
 // </div>
 
-// <!------------------------ Maze Game ------------------------>
-// <div id='proj-maze' class="proj-container">
-//     <a href='#proj-maze' class="proj-title">FPGA-based Maze Traversal Game</a>
-//     <div class="proj-subheader">Created a basic video game using computer hardware and low-level software.</div>
-//     <div class="proj-content">
-//         <div class="proj-img-container">
-//             <img class="proj-img" style="margin-right:5px;" src="../images/mazegame_1.jpg">
-//             <img class="proj-img" src="../images/mazegame_2.jpg">
-//         </div>
-//         I created a maze traversal game using Verilog code on a field-programmable gate array (FPGA).
-//         The goal of the game is to traverse a maze and get to the finish line without coming into contact with any walls while controlling a constantly-moving player character.<br><br>
-//         This design process involved:<br>
-//         • Designing a finite state machine (FSM) representing interactions between the different states of the game<br>
-//         • Creating I/O modules for user input and image output to the display<br>
-//         • Testing code functionality using a simulation via ModelSim<br>
-//         • Launching project onto a live FPGA using Quartus Prime
-//     </div>
-// </div>
-
-// <img onclick="scrollToTop()" id="scroll-to-top" title="Go to top" src='../images/scroll_top.png'>
-
-// <!------------------------ TODO: Pneumatic Engine ------------------------>
+// <!------------------------ Pneumatic Engine ------------------------>
 // <!-- <div id="proj7" class="collapsible">
 //     <div class="collapsible-arrow-container">
 //         <div id="proj7-arrow" class="collapsible-arrow"></div>

@@ -98,6 +98,7 @@ const styles = {
   },
   homeText: {
     fontSize: 38,
+    fontWeight: '600',
     color: 'textPrimary',
     transition: 'all 0.2s ease',
     '&:hover': {

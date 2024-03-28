@@ -40,7 +40,7 @@ const Header = () => {
       ]}
     >
       <Box sx={styles.homeButton}>
-        <Link to="/">
+        <Link to="/about">
           <Typography sx={styles.homeText}>[sk]</Typography>
         </Link>
       </Box>
@@ -117,7 +117,7 @@ const styles = {
     },
   },
   currentRoute: {
-    borderColor: 'white',
+    borderColor: 'textPrimary',
   },
 };
 

@@ -1,4 +1,8 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import './App.css';
@@ -22,12 +26,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
+        element: <Navigate to="/about" />,
+      },
+      {
+        path: '/about',
         element: <Home />,
       },
-      // {
-      //   path: '/about',
-      //   element: <div />,
-      // },
       {
         path: '/experience',
         element: <Experience />,

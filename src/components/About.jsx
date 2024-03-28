@@ -3,6 +3,7 @@ import { Link } from '@mui/material';
 
 // TODO: add some ornament to page wrapper, it looks a bit plain
 // TODO: improve bio text
+// TODO: change design of page scroll bar, maybe make it always visible? it shift contents when switching between pages
 const About = () => {
   // TODO: fill
   return (

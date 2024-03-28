@@ -2,10 +2,8 @@ import { Box, Typography } from '@mui/material';
 import { PROJECTS } from '@/constants';
 import { PageContainer, ProjectTile } from '@/components';
 
-// TODO: do 2 columns here
 const Projects = () => {
   return (
-    // {/* <Box sx={styles.indexContainer}>Index</Box> */}
     <PageContainer>
       <Typography variant="h2" sx={styles.title}>
         projects

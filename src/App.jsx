@@ -54,7 +54,6 @@ const router = createBrowserRouter([
 
 const App = () => {
   const theme = createTheme(THEME);
-  console.log({ theme });
   return (
     <ThemeProvider theme={theme}>
       <RouterProvider router={router} />

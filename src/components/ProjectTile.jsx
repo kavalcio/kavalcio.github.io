@@ -57,7 +57,6 @@ const ProjectTile = ({ project }) => {
   );
 };
 
-// TODO: dont use loose colors, get from theme
 const styles = {
   container: {
     display: 'flex',

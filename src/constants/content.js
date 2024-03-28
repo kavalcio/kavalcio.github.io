@@ -121,9 +121,6 @@ export const PROJECTS = [
     hook: `Lead a university robotics team in designing and building a 30lbs remote controlled robot to fight in
     an arena deathmatch against other robots. We competed in RoboBrawl 2019 at the University of Illinois and ranked
     8th place out of 30+ teams from various universities across the US and Canada.`,
-    // description: `Between 2018-2020, I co-led the Combat division of the UofT Robotics Association.
-    //   During this time we designed, manufactured and assembled a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.
-    //   We competed in RoboBrawl 2019 at the University of Illinois and ranked 8th place out of 30+ teams from various universities across the US and Canada.`,
     img: 'src/assets/images/utra_2.jpg',
     tech: [],
   },

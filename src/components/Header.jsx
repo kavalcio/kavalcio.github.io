@@ -10,8 +10,8 @@ import {
 
 import { PRIMARY_ROUTES } from '@/constants';
 
-// TODO: this spills out on mobile view
-// TODO: make text not pure white, make it kinda gray
+// TODO: the whole app looks bad on mobile, fix it
+// TODO: make primary and secondary text not pure white but kinda gray
 const Header = () => {
   const { pathname: currentPath } = useLocation();
   const theme = useTheme();

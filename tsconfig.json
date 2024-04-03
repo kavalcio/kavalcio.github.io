@@ -14,7 +14,6 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@/assets": ["src/assets/index.ts"],
       "@/components": ["src/components/index.ts"],
       "@/config": ["src/config/index.ts"],
       "@/constants": ["src/constants/index.ts"],

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // TODO: change design of page scroll bar, maybe make it always visible? it shift contents when switching between pages
 // TODO: change boxShadow direction based on mouse position
 // TODO: change cursor design
+// TODO: i could move images back to assets/images and import them individually in the content.js file, instead of putting them in the public folder
 const About = () => (
   <Box sx={styles.container}>
     <Box sx={styles.textContainer}>
@@ -65,12 +66,19 @@ const styles = {
       flexDirection: 'column',
       alignItems: 'center',
     },
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: 'unset',
+    },
   }),
   headshot: (theme) => ({
     ml: 4,
     objectFit: 'cover',
     width: 350,
     height: 350,
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      height: 'auto',
+    },
     borderRadius: 6,
     aspectRatio: 1,
     transition: 'box-shadow 0.2s ease',
@@ -98,13 +106,16 @@ const styles = {
     mb: 2,
     fontSize: 18,
   },
-  bigText: {
+  bigText: (theme) => ({
     fontSize: 70,
     fontWeight: 'bold',
     color: 'purple2',
     lineHeight: 1,
     mb: 3,
-  },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 50,
+    },
+  }),
   link: {
     color: 'purple2',
     textDecoration: 'none',

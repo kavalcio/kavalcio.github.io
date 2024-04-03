@@ -6,7 +6,10 @@ import {
   Typography,
   useTheme,
   useScrollTrigger,
+  useMediaQuery,
+  Drawer,
 } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 import { PRIMARY_ROUTES } from '@/constants';
 
@@ -15,7 +18,9 @@ import { PRIMARY_ROUTES } from '@/constants';
 const Header = () => {
   const { pathname: currentPath } = useLocation();
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isBelowThreshold, setIsBelowThreshold] = useState(true);
   const isScrollingDown = useScrollTrigger({
     threshold: theme.dimensions.header.height,
@@ -31,6 +36,21 @@ const Header = () => {
     };
   }, [theme.dimensions.header.height]);
 
+  const routeElements = PRIMARY_ROUTES.map((route) => (
+    <Box key={route.path} sx={[styles.linkButton]}>
+      <Link to={route.path} onClick={() => setIsDrawerOpen(false)}>
+        <Typography
+          sx={[
+            styles.linkText,
+            currentPath === route.path && styles.currentRoute,
+          ]}
+        >
+          {route.name.toLowerCase()}
+        </Typography>
+      </Link>
+    </Box>
+  ));
+
   return (
     <AppBar
       sx={[
@@ -44,22 +64,26 @@ const Header = () => {
           <Typography sx={styles.homeText}>[sk]</Typography>
         </Link>
       </Box>
-      <Box sx={styles.rightContainer}>
-        {PRIMARY_ROUTES.map((route) => (
-          <Box key={route.path} sx={[styles.linkButton]}>
-            <Link to={route.path}>
-              <Typography
-                sx={[
-                  styles.linkText,
-                  currentPath === route.path && styles.currentRoute,
-                ]}
-              >
-                {route.name.toLowerCase()}
-              </Typography>
-            </Link>
-          </Box>
-        ))}
-      </Box>
+      {isMobile ? (
+        <>
+          <MenuIcon
+            sx={styles.drawerMenuIcon}
+            onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+          />
+          <Drawer
+            open={isDrawerOpen}
+            anchor="right"
+            onClose={() => setIsDrawerOpen(!isDrawerOpen)}
+            PaperProps={{
+              sx: styles.drawerPaper,
+            }}
+          >
+            {routeElements}
+          </Drawer>
+        </>
+      ) : (
+        <Box sx={styles.rightContainer}>{routeElements}</Box>
+      )}
     </AppBar>
   );
 };
@@ -120,6 +144,22 @@ const styles = {
   currentRoute: {
     borderColor: 'textPrimary',
   },
+  drawerMenuIcon: {
+    color: 'textPrimary',
+    fontSize: 32,
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    p: 1,
+    '&:hover': {
+      color: 'purple2',
+    },
+  },
+  drawerPaper: (theme) => ({
+    p: 2,
+    background: theme.palette.backgroundTransparent,
+    backdropFilter: 'blur(10px)',
+    '-webkit-backdrop-filter': 'blur(10px)',
+  }),
 };
 
 export default Header;

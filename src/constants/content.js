@@ -85,6 +85,7 @@ export const EDUCATION = [
 ];
 
 export const PROJECTS = [
+  // TODO: the playUrl for screensavers goes to the index page of the project. clean up project so it only has screensavers on the index page
   {
     id: 'screensavers',
     title: 'Windows XP Screensavers',

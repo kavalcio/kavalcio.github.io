@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { Link } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 // TODO: add some ornament to page wrapper, it looks a bit plain
 // TODO: change design of page scroll bar, maybe make it always visible? it shift contents when switching between pages
@@ -16,18 +16,24 @@ const About = () => (
       </Typography>
       <Typography sx={styles.bodyText}>
         I&apos;m currently working at&nbsp;
-        <Link href="https://lumiqlearn.com" sx={styles.link}>
-          LumiQ
+        <Link to="https://lumiqlearn.com">
+          <Typography sx={styles.link} display="inline">
+            LumiQ
+          </Typography>
         </Link>
         , an audio-based professional education platform. Prior to that I
         completed a 16-month co-op at&nbsp;
-        <Link href="https://modiface.com" sx={styles.link}>
-          Modiface
+        <Link to="https://modiface.com">
+          <Typography sx={styles.link} display="inline">
+            Modiface
+          </Typography>
         </Link>
         &nbsp;building a CMS used by international beauty brands before
         graduating from the&nbsp;
-        <Link href="https://www.engineering.utoronto.ca/" sx={styles.link}>
-          University of Toronto
+        <Link to="https://www.engineering.utoronto.ca/">
+          <Typography sx={styles.link} display="inline">
+            University of Toronto
+          </Typography>
         </Link>
         &nbsp;with a degree in Computer Engineering.
       </Typography>
@@ -37,8 +43,10 @@ const About = () => (
         technology, and programming has been a way for me to explore that
         intersection. Lately I&apos;ve been dipping my toes into the world of
         shaders and WebGL, which you can see in&nbsp;
-        <Link href="/projects" sx={styles.link}>
-          some of my projects
+        <Link to="/projects">
+          <Typography sx={styles.link} display="inline">
+            some of my projects
+          </Typography>
         </Link>
         .
       </Typography>

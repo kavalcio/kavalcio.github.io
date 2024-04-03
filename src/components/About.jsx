@@ -51,11 +51,7 @@ const About = () => (
         .
       </Typography>
     </Box>
-    <Box
-      component={'img'}
-      src="src/assets/images/headshot.jpeg"
-      sx={styles.headshot}
-    />
+    <Box component={'img'} src="/images/headshot.jpeg" sx={styles.headshot} />
   </Box>
 );
 

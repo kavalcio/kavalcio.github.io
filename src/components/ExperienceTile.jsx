@@ -60,8 +60,8 @@ const styles = {
     textAlign: 'left',
     transition: 'all 0.15s ease',
     '&:hover': {
-      borderColor: 'purpleTransparent1',
-      backgroundColor: 'purpleTransparent2',
+      borderColor: 'purpleBorder',
+      backgroundColor: 'purpleTransparent',
     },
     // '&:hover > p:nth-of-type(1)': {
     //   color: 'purple2',

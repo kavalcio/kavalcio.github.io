@@ -6,7 +6,7 @@ const styles = {
   pill: {
     color: 'textPrimary',
     fontSize: 14,
-    backgroundColor: 'purpleTransparent1',
+    backgroundColor: 'purpleBorder',
     lineHeight: 1,
     px: 1.5,
     py: 1,

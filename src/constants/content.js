@@ -148,7 +148,7 @@ export const PROJECTS = [
     hook: 'A web-based image annotation tool used to populate a tissue histology image database for computational pathology research.',
     img: 'src/assets/images/adp_image.png',
     playUrl: 'https://www.dsp.utoronto.ca/projects/ADP/',
-    tech: [],
+    tech: ['HTML', 'CSS', 'Javascript'],
   },
   {
     id: 'maze-game',

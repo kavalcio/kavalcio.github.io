@@ -1,23 +1,44 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
-import NotesIcon from '@mui/icons-material/Notes';
 
 import { Pill } from '@/components';
 
-// TODO: what should clicking the title do if there is no playUrl? maybe it should just open a project details page
-// TODO: what should clicking the image do? maybe it should open a project details page
-// TODO: where should description go?
 const ProjectTile = ({ project }) => {
   return (
     <Box sx={styles.container}>
-      <Box component="img" sx={styles.image} src={project.img} />
+      <Link
+        sx={[
+          styles.image,
+          { background: `url(${project.img}) center / cover no-repeat` },
+        ]}
+        href={project.playUrl}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {project.playUrl && (
+          <Box sx={styles.imageHoverOverlay}>
+            <PlayArrowRoundedIcon
+              sx={{
+                fontSize: 70,
+                color: 'white',
+                m: 'auto',
+              }}
+            />
+          </Box>
+        )}
+      </Link>
       <Box sx={styles.textContainer}>
-        <a href={project.playUrl} target="_blank" rel="noreferrer">
-          <Typography sx={styles.title}>{project.title}</Typography>
-        </a>
+        <Link
+          sx={[styles.title, project.playUrl && styles.titleInteractive]}
+          href={project.playUrl}
+          target="_blank"
+          rel="noreferrer"
+          underline="none"
+        >
+          {project.title}
+        </Link>
         <Typography sx={styles.hook}>{project.hook}</Typography>
-        {/* <Typography sx={styles.description}>{project.description}</Typography> */}
         {project.tech?.length > 0 && (
           <Box sx={styles.pillContainer}>
             {project.tech.map((tech, index) => (
@@ -48,9 +69,6 @@ const ProjectTile = ({ project }) => {
               <PlayArrowRoundedIcon sx={styles.icon} />
             </Box>
           )}
-          {/* <Box sx={styles.iconButton}>
-            <NotesIcon sx={styles.icon} />
-          </Box> */}
         </Box>
       </Box>
     </Box>
@@ -65,33 +83,47 @@ const styles = {
     border: '2px solid transparent',
     borderRadius: 4,
     p: 3,
-    // mb: 3,
     textAlign: 'left',
     transition: 'all 0.15s ease',
     maxWidth: 350,
     '&:hover': {
-      borderColor: 'purpleTransparent1',
-      backgroundColor: 'purpleTransparent2',
+      borderColor: 'purpleBorder',
+      backgroundColor: 'purpleTransparent',
     },
   },
   image: {
-    objectFit: 'cover',
     width: '100%',
-    mb: 2,
     borderRadius: 2,
-    border: (theme) => `2px solid ${theme.palette.purpleTransparent1}`,
+    border: (theme) => `2px solid ${theme.palette.purpleBorder}`,
     aspectRatio: '4 / 3',
+    transition: 'all 0.15s ease',
+    overflow: 'hidden',
+  },
+  imageHoverOverlay: {
+    transition: 'all 0.15s ease',
+    background: 'rgba(0, 0, 0, 0.5)',
+    display: 'flex',
+    height: '100%',
+    width: '100%',
+    opacity: 0,
+    '&:hover': {
+      opacity: 1,
+    },
   },
   textContainer: {
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
+    mt: 2,
   },
   title: {
+    width: 'fit-content',
     fontSize: 20,
     fontWeight: 'bold',
     color: 'textPrimary',
     transition: 'all 0.15s ease',
+  },
+  titleInteractive: {
     '&:hover': {
       color: 'purple2',
     },
@@ -99,6 +131,7 @@ const styles = {
   hook: {
     fontSize: 14,
     color: 'textSecondary',
+    mb: 'auto',
   },
   date: {
     fontSize: 14,
@@ -120,13 +153,10 @@ const styles = {
   },
   bottomContainer: {
     display: 'flex',
-    // alignItems: 'left',
-    // mt: 2,
   },
   iconButton: {
     mt: 2,
     mr: 1,
-    // cursor: 'pointer',
     '&:hover > svg:nth-of-type(1)': {
       color: 'purple3',
       top: -3,

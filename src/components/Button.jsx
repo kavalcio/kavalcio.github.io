@@ -11,14 +11,14 @@ const Button = (props) => (
       fontWeight: 600,
       borderRadius: 1,
       lineHeight: 1.5,
-      border: (theme) => `3px solid ${theme.palette.purpleTransparent1}`,
+      border: (theme) => `3px solid ${theme.palette.purpleBorder}`,
       textDecoration: 'none',
       color: 'textPrimary',
       textTransform: 'none',
       cursor: 'pointer',
       transition: 'all 0.15s ease',
       '&:hover': {
-        backgroundColor: 'purpleTransparent2',
+        backgroundColor: 'purpleTransparent',
       },
       ...props.sx,
     }}

@@ -11,6 +11,7 @@ export const THEME = {
     backgroundTransparent: 'rgba(36, 36, 36, 0.9)',
   },
   // TODO: this font setting doesn't work, it defaults to system-ui. get it working
+  // TODO: also pick a font
   typography: {
     fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif',
     // h2: {

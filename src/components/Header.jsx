@@ -16,6 +16,7 @@ import { PRIMARY_ROUTES } from '@/constants';
 // TODO: make primary and secondary text not pure white but kinda gray
 // TODO: add a button at the bottom right corner to scroll to top?
 // TODO: maybe convert this to a single page app?
+// TODO: if i'm keeping this as a multi-page app, reset scroll on navigation
 const Header = () => {
   const { pathname: currentPath } = useLocation();
   const theme = useTheme();

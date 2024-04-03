@@ -13,7 +13,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 import { PRIMARY_ROUTES } from '@/constants';
 
-// TODO: the whole app looks bad on mobile, fix it
 // TODO: make primary and secondary text not pure white but kinda gray
 const Header = () => {
   const { pathname: currentPath } = useLocation();

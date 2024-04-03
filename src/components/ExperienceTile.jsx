@@ -1,23 +1,19 @@
-import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { Pill } from '@/components';
 
 // TODO: try to fix the phantom border on hover
 // TODO: test this app in safari, see if we need -webkit css properties
 const ExperienceTile = ({ experience }) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <Box sx={styles.container}>
-      {!isMobile && (
-        <Box
-          component="a"
-          href={experience.employerUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Box component="img" sx={styles.icon} src={experience.icon} />
-        </Box>
-      )}
+      <Box
+        component="a"
+        href={experience.employerUrl}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Box component="img" sx={styles.icon} src={experience.icon} />
+      </Box>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <Typography sx={styles.title}>
           {experience.title}
@@ -71,7 +67,7 @@ const styles = {
     //   color: 'purple2',
     // },
   },
-  icon: {
+  icon: (theme) => ({
     width: 50,
     height: 50,
     // mb: 2,
@@ -82,7 +78,10 @@ const styles = {
     // '&:hover': {
     //   opacity: 0.8,
     // },
-  },
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
+  }),
   title: {
     fontSize: 20,
     fontWeight: 'bold',

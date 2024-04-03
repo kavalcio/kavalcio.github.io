@@ -17,21 +17,21 @@ const About = () => (
       </Typography>
       <Typography sx={styles.bodyText}>
         I&apos;m currently working at&nbsp;
-        <Link to="https://lumiqlearn.com">
+        <Link to="https://lumiqlearn.com" target="_blank">
           <Typography sx={styles.link} display="inline">
             LumiQ
           </Typography>
         </Link>
         , an audio-based professional education platform. Prior to that I
         completed a 16-month co-op at&nbsp;
-        <Link to="https://modiface.com">
+        <Link to="https://modiface.com" target="_blank">
           <Typography sx={styles.link} display="inline">
             Modiface
           </Typography>
         </Link>
         &nbsp;building a CMS used by international beauty brands before
         graduating from the&nbsp;
-        <Link to="https://www.engineering.utoronto.ca/">
+        <Link to="https://www.engineering.utoronto.ca/" target="_blank">
           <Typography sx={styles.link} display="inline">
             University of Toronto
           </Typography>

@@ -85,7 +85,6 @@ export const EDUCATION = [
 ];
 
 export const PROJECTS = [
-  // TODO: the playUrl for screensavers goes to the index page of the project. clean up project so it only has screensavers on the index page
   {
     id: 'screensavers',
     title: 'Windows XP Screensavers',
@@ -132,7 +131,7 @@ export const PROJECTS = [
     img: '/images/dev-portfolio.png',
     playUrl: 'https://kavalcio.github.io/',
     githubUrl: 'https://github.com/kavalcio/kavalcio.github.io',
-    tech: ['React'],
+    tech: ['React', 'Vite'],
   },
   {
     id: 'fashion-portfolio',

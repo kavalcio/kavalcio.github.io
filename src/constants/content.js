@@ -85,7 +85,6 @@ export const EDUCATION = [
 ];
 
 export const PROJECTS = [
-  // TODO: the playUrl for screensavers goes to the index page of the project. clean up project so it only has screensavers on the index page
   {
     id: 'screensavers',
     title: 'Windows XP Screensavers',
@@ -103,8 +102,9 @@ export const PROJECTS = [
     Dithering is traditionally used to reduce the effects of quantization error in audiovisual data.`,
     img: '/images/dither.png',
     tech: ['Three.js', 'GLSL'],
-    playUrl: 'https://three-js-screen-savers.vercel.app/dither.html',
-    githubUrl: 'https://github.com/kavalcio/three-js-screen-savers',
+    playUrl: 'https://kavalcio-three-js-playground.vercel.app/dither',
+    githubUrl:
+      'https://github.com/kavalcio/three-js-playground/blob/main/src/demos/dither.js',
   },
   {
     id: 'inkblot',
@@ -112,9 +112,9 @@ export const PROJECTS = [
     hook: 'A shader that generates shifting inkblot patterns using Perlin noise and several layers of filtering.',
     img: '/images/inkblot.png',
     tech: ['Three.js', 'GLSL'],
-    playUrl: 'https://three-js-screen-savers.vercel.app/inkblot.html',
+    playUrl: 'https://kavalcio-three-js-playground.vercel.app/inkblot',
     githubUrl:
-      'https://github.com/kavalcio/three-js-screen-savers/blob/main/src/pages/inkblot.js',
+      'https://github.com/kavalcio/three-js-playground/blob/main/src/demos/inkblot.js',
   },
   {
     id: 'combat-robot',
@@ -167,28 +167,16 @@ export const PROJECTS = [
 //     <div class="proj-subheader">Recreation of some one of the classic screensavers from the Windows XP operating system, built using Three.js.</div>
 //     <div class="proj-content horizontal">
 //         {%
-//             include cell.html
 //             title="XP Screensaver - Mystify"
 //             description="The first Windows XP screensaver I recreated, which consists of several polygons whose vertices bounce around the screen, creating interesting shapes."
-//             img="../images/mystify.png"
-//             playUrl="https://three-js-screen-savers.vercel.app/mystify.html"
-//             githubUrl="https://github.com/kavalcio/three-js-screen-savers"
 //         %}
 //         {%
-//             include cell.html
 //             title="XP Screensaver - Bezier"
 //             description="Another Three.js app recreating a Windows XP screensaver. This one is similar to Mystify, but instead consists of several cubic Bezier curves instead of polygons."
-//             img="../images/bezier.png"
-//             playUrl="https://three-js-screen-savers.vercel.app/bezier.html"
-//             githubUrl="https://github.com/kavalcio/three-js-screen-savers"
 //         %}
 //         {%
-//             include cell.html
 //             title="XP Screensaver - Tubes"
 //             description="A wise man once said the internet is \"a series of tubes\". What is this, if not a metaphor for the vastly interconnected world we live in today? <br> My favourite among the XP screensavers, originally referred to as 3D Pipes."
-//             img="../images/pipes.png"
-//             playUrl="https://three-js-screen-savers.vercel.app/pipes.html"
-//             githubUrl="https://github.com/kavalcio/three-js-screen-savers"
 //         %}
 //     </div>
 // </div>
@@ -198,13 +186,7 @@ export const PROJECTS = [
 //     <a href='#proj-adp' class="proj-title">Atlas of Digital Pathology - Tissue Annotation Tool</a>
 //     <div class="proj-subheader">Created a web-based annotation tool for computational pathology research.</div>
 //     <div class="proj-content">
-//         <div class="proj-content">
-//             <div class="proj-img-container">
-//                 <img class="proj-img" style="margin-right:5px;" src="../images/workflow.png">
-//                 <img class="proj-img" src="../images/adp_image.png">
-//             </div>
 //             For my Capstone project, I was part of a 3-people team that designed and built a web-based annotation tool for populating a tissue histology image database. The purpose of this database is to train machine learning models in various areas of computational pathology (like cancer detection).
-//         </div>
 //     </div>
 // </div>
 
@@ -213,17 +195,10 @@ export const PROJECTS = [
 //     <a href='#proj-utra' class="proj-title">Combat Robot Design</a>
 //     <div class="proj-subheader">Lead a university team in designing and building an RC combat robot.</div>
 //     <div class="proj-content">
-//         <div class="proj-img-container">
-//             <img class="proj-img" style="margin-right:5px;" src="../images/utra_1.jpg">
-//             <img class="proj-img" src="../images/utra_2.jpg">
-//         </div>
 //         Between 2018-2020, I co-led the Combat division of the UofT Robotics Association.
 //         During this time we designed, manufactured and assembled a 30lbs remote controlled robot to fight in an arena deathmatch against other robots.<br><br>
 //         We competed in RoboBrawl 2019 at the University of Illinois Urbana-Champaign and ranked 8th place out of 30+ teams from various universities around North America.<br>
 //         <br>
-//         <!-- <div class="proj-img-container">
-//             <img class="proj-img" style="margin-right:5px;" src="../images/utra_3.jpg">
-//         </div> -->
 //         My responsibilities included:<br>
 //         • Overseeing electrical/mechatronic design<br>
 //         • Managing budget, logistics and integration<br>
@@ -231,16 +206,3 @@ export const PROJECTS = [
 //         • Performing quick repairs and maintenance during pit stops between matches<br>
 //     </div>
 // </div>
-
-// <!------------------------ Pneumatic Engine ------------------------>
-// <!-- <div id="proj7" class="collapsible">
-//     <div class="collapsible-arrow-container">
-//         <div id="proj7-arrow" class="collapsible-arrow"></div>
-//     </div>
-//     <div class="collapsible-title">Machine Learning Labs</div>
-// </div>
-// <div id="proj7-content" class="collapsible-content">
-//     * Lorem ipsum
-//     * Dolor sit amet
-// </div>
-// -->

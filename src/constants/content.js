@@ -157,6 +157,7 @@ export const PROJECTS = [
     img: '/images/maze.png',
     hook: `A maze traversal game built using Verilog code on a field-programmable gate array (FPGA). Created I/O modules
     for user input and image output to the display, performed simulation testing using ModelSim.`,
+    githubUrl: 'https://github.com/kavalcio/fpga-maze-game',
     tech: ['Verilog', 'Computer Hardware', 'ModelSim'],
   },
 ];

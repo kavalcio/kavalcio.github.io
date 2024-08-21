@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Box } from '@mui/material';
 
-import { Footer, Header } from '@/components';
+import { Footer, Header, ScrollToTop } from '@/components';
 
 const AppRoot = () => {
   return (
@@ -23,6 +23,7 @@ const AppRoot = () => {
           px: 4,
         }}
       >
+        <ScrollToTop />
         <Header />
         <Outlet />
         <Footer />

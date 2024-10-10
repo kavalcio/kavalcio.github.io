@@ -102,7 +102,7 @@ export const PROJECTS = [
     Dithering is traditionally used to reduce the effects of quantization error in audiovisual data.`,
     img: '/images/dither.png',
     tech: ['Three.js', 'GLSL'],
-    playUrl: 'https://kavalcio-three-js-playground.vercel.app/dither',
+    playUrl: 'https://kavalcio-playground.vercel.app/dither',
     githubUrl:
       'https://github.com/kavalcio/three-js-playground/blob/main/src/demos/dither.js',
   },
@@ -112,7 +112,7 @@ export const PROJECTS = [
     hook: 'A shader that generates shifting inkblot patterns using Perlin noise and several layers of filtering.',
     img: '/images/inkblot.png',
     tech: ['Three.js', 'GLSL'],
-    playUrl: 'https://kavalcio-three-js-playground.vercel.app/inkblot',
+    playUrl: 'https://kavalcio-playground.vercel.app/inkblot',
     githubUrl:
       'https://github.com/kavalcio/three-js-playground/blob/main/src/demos/inkblot.js',
   },

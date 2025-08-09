@@ -86,6 +86,14 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
+    id: 'raytracer',
+    title: 'Ray Tracer',
+    hook: 'A simple ray tracing renderer written from scratch using C++. Accepts a list of 3D primitives and outputs a rendered image into a .ppm file.',
+    img: '/images/raytracer.jpg',
+    tech: ['C++'],
+    githubUrl: 'https://github.com/kavalcio/raytracer',
+  },
+  {
     id: 'screensavers',
     title: 'Windows XP Screensavers',
     hook: 'Recreation of several iconic screensavers from the Windows XP operating system.',

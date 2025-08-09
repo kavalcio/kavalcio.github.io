@@ -112,7 +112,17 @@ export const PROJECTS = [
     tech: ['Three.js', 'GLSL'],
     playUrl: 'https://kavalcio-playground.vercel.app/dither',
     githubUrl:
-      'https://github.com/kavalcio/three-js-playground/blob/main/src/demos/dither.js',
+      'https://github.com/kavalcio/three-js-playground/blob/main/src/pages/Dither',
+  },
+  {
+    id: 'dice',
+    title: 'Dice Roller [WIP]',
+    hook: 'A demo that allows rolling 4, 6, 8, 10, 12 or 20-sided dice in a 3D environment using physics simulation powered by the Rapier.js library. The total of the rolled dice is calculated using raycasting and shown on screen.',
+    img: '/images/dice.png',
+    tech: ['Three.js'],
+    playUrl: 'https://kavalcio-playground.vercel.app/dice-fiber',
+    githubUrl:
+      'https://github.com/kavalcio/three-js-playground/blob/main/src/pages/DiceFiber',
   },
   {
     id: 'inkblot',
@@ -122,7 +132,7 @@ export const PROJECTS = [
     tech: ['Three.js', 'GLSL'],
     playUrl: 'https://kavalcio-playground.vercel.app/inkblot',
     githubUrl:
-      'https://github.com/kavalcio/three-js-playground/blob/main/src/demos/inkblot.js',
+      'https://github.com/kavalcio/three-js-playground/blob/main/src/pages/Inkblot',
   },
   {
     id: 'combat-robot',

@@ -3,12 +3,21 @@
 export const EXPERIENCE = [
   {
     id: 'lumiq',
-    title: 'Full Stack Developer',
+    roles: [
+      {
+        title: 'Senior Software Developer',
+        dateFrom: 'January 2025',
+        dateTo: 'Present',
+      },
+      {
+        title: 'Full Stack Developer',
+        dateFrom: 'June 2021',
+        dateTo: 'January 2025',
+      },
+    ],
     employer: 'LumiQ',
     employerUrl: 'https://lumiqlearn.com',
     icon: '/images/lumiq.jpg',
-    dateFrom: 'June 2021',
-    dateTo: 'Present',
     hook: 'Contributed to the continuous development of a professional education platform for finance professionals',
     description: [
       'Utilized React and React Native extensively to implement and maintain responsive front-end applications',
@@ -21,21 +30,24 @@ export const EXPERIENCE = [
     tech: [
       'React',
       'React Native',
-      'Redux',
+      'Typescript',
       'Node.js',
       'PostgreSQL',
-      'Docker',
-      'Kubernetes',
+      'Redux',
     ],
   },
   {
     id: 'modiface',
-    title: 'Full Stack Developer',
+    roles: [
+      {
+        title: 'Full Stack Developer',
+        dateFrom: 'June 2019',
+        dateTo: 'August 2020',
+      },
+    ],
     employer: 'Modiface',
     employerUrl: 'https://www.modiface.com',
     icon: '/images/modiface.png',
-    dateFrom: 'June 2019',
-    dateTo: 'August 2020',
     hook: 'Contributed to the development of a Content Management System used by international beauty brands',
     description: [
       'Employed a robust tech stack with frameworks like Laravel and Vue.js',
@@ -47,12 +59,16 @@ export const EXPERIENCE = [
   },
   {
     id: 'rp4k',
-    title: 'Programming Instructor',
+    roles: [
+      {
+        title: 'Programming Instructor',
+        dateFrom: 'July 2018',
+        dateTo: 'September 2018',
+      },
+    ],
     employer: 'Real Programming 4 Kids',
     employerUrl: 'https://realprogramming.com',
     icon: '/images/rp4k.jpg',
-    dateFrom: 'July 2018',
-    dateTo: 'September 2018',
     hook: 'Delivered engaging programming and game development classes to a diverse group of students',
     description: [
       'Instructed using multiple languages, including Visual Basic and Java, providing students with a comprehensive understanding of programming concepts',

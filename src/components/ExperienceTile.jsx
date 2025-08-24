@@ -15,21 +15,34 @@ const ExperienceTile = ({ experience }) => {
         <Box component="img" sx={styles.icon} src={experience.icon} />
       </Box>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <Typography sx={styles.title}>
-          {experience.title}
-          <Typography
-            component="a"
-            href={experience.employerUrl}
-            target="_blank"
-            rel="noreferrer"
-            sx={styles.employer}
+        {experience.roles.map((role, index) => (
+          <Box
+            key={index}
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              mb: 1,
+            }}
           >
-            &nbsp;@ {experience.employer}
-          </Typography>
-        </Typography>
-        <Typography sx={styles.date}>
-          {experience.dateFrom} - {experience.dateTo}
-        </Typography>
+            <Box>
+              <Typography sx={styles.title}>
+                {role.title}
+                <Typography
+                  component="a"
+                  href={experience.employerUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  sx={styles.employer}
+                >
+                  &nbsp;@ {experience.employer}
+                </Typography>
+              </Typography>
+              <Typography sx={styles.date}>
+                {role.dateFrom} - {role.dateTo}
+              </Typography>
+            </Box>
+          </Box>
+        ))}
         <Typography sx={styles.hook}>{experience.hook}</Typography>
         <Box component="ul" sx={styles.descriptionContainer}>
           {experience.description?.map((desc, index) => (
@@ -104,7 +117,6 @@ const styles = {
   date: {
     fontSize: 14,
     color: 'textSecondary',
-    mb: 1,
   },
   descriptionContainer: {
     listStyleType: 'circle',
